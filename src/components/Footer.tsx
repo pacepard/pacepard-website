@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css'; 
 
-const FigmaFooter = () => {
+const Footer = () => {
   return (
     <footer className="figma-footer">
       <div className="footer-content">
@@ -91,4 +91,4 @@ const FigmaFooter = () => {
   );
 };
 
-export default FigmaFooter;
+export default Footer;

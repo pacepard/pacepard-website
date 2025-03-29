@@ -1,8 +1,9 @@
 .hero-section {
-  padding-top: 140px; /* Reduced from 224px */
+  padding-top: 140px;
+  padding-bottom: 40px; /* Reduced padding-bottom */
   background-color: #FFFFFF;
   position: relative;
-  min-height: 100vh; /* Add minimum height */
+  min-height: auto; /* Changed from 100vh to auto */
 }
 
 .hero-background {
@@ -98,7 +99,7 @@
   justify-content: center;
   align-items: baseline;
   gap: 0;
-  line-height: 65px; /* Added specific line height */
+  line-height: 65px; 
 }
 
 .main-title h1,
@@ -260,15 +261,6 @@
   flex-shrink: 0;
 }
 
-/* Remove the old video-icon class since we're using SVG now */
-.video-icon {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6366F1;
-}
-
 .hero-button.secondary:hover {
   background-image: linear-gradient(#EBD6FF, #EBD6FF), linear-gradient(47.62deg, #3D25EF -15.2%, #9626ED 89.54%);
   background-origin: border-box;
@@ -343,16 +335,6 @@
   top: -2%;
   transform: translateX(230%);
   background: #F4E8FF;
-}
-
-/* Remove the duplicate cyan selector */
-.name-tag.cyan {
-  width: auto;
-  min-width: 220px;
-  left: 30%;
-  top: 25%;
-  /* transform: translateX(-230%); */
-  background: #CEF8FF;
 }
 
 .name-tag.pink {
@@ -433,11 +415,7 @@
   transform-origin: top left;
 }
 
-/* Remove vertical line class as it's no longer needed */
-.hex-line.vertical {
-  left: 48px;
-  top: 0;
-}
+
 
 .hex-line.diagonal-1 {
   left: 96px;
@@ -452,24 +430,6 @@
   transform: rotate(120deg);
   transform-origin: top left;
 }
-  .hero-image {
-    margin-top: 48px;
-    width: 100%;
-    max-width: 1024px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 1; /* Lower z-index for the image */
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-
 .hex-container {
   display: grid;
   grid-template-columns: repeat(13, 96px);

@@ -22,10 +22,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  min-width: 147px; /* Changed from width to min-width */
+  min-width: 240px; /* Increased to accommodate larger logo */
   text-decoration: none !important;
   height: 100%;
-  margin-right: 147px; /* Added explicit margin */
+  margin-right: 147px;
 }
 
 .navbar-links {
@@ -66,4 +66,11 @@
 .primary-button:hover {
   color: #FFFFFF !important;
   opacity: 0.9;
+}
+
+
+.navbar-logo {
+  height: 64px; /* Increased significantly for better visibility */
+  width: auto;
+  object-fit: contain;
 }
