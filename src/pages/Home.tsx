@@ -3,8 +3,28 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import GetStartedButton from '../components/common/GetStartedButton';
+import FeatureSection from '../components/sections/FeatureSection';
+import { Activity, Target, Zap } from 'react-feather'; // Add this import
 
 const Home: React.FC = () => {
+  const features = [
+    {
+      icon: 'activity',
+      title: 'AI-Powered Sales Assessment',
+      description: 'Track real-time sales performance metrics to identify top-performing candidates instantly.'
+    },
+    {
+      icon: 'target',
+      title: 'Smart Performance Tracking',
+      description: 'Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.'
+    },
+    {
+      icon: 'zap',
+      title: 'Sales Performance Dashboard',
+      description: 'Get instant insights into candidate performance and identify areas for improvement.'
+    }
+  ];
+
   return (
     <div className="home-container">
       <section className="hero-section">
@@ -77,17 +97,19 @@ const Home: React.FC = () => {
                     See how it works
                   </button>
                 </div>
-                <div className="hero-image">
-                  <img
-                    src="/images/video-conference.png"
-                    alt="Video conference dashboard showing multiple participants and analytics"
-                  />
-                </div>
+                
               </div>
             </Col>
           </Row>
         </Container>
       </section>
+
+      <FeatureSection
+        title="Grow loyal developers and build long-term retention."
+        subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
+        features={features}
+        image="/images/feature-visualizer.png" 
+      />
     </div>
   );
 };

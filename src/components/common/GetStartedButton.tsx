@@ -19,7 +19,7 @@ const GetStartedButton: React.FC<GetStartedButtonProps> = ({ className, variant 
 
   return (
     <button type="button" onClick={handleClick} className={`${baseClass} ${className || ''}`}>
-      Get started for free
+      Get started here
     </button>
   );
 };
