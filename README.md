@@ -1,5 +1,5 @@
 
-<img src="assets/pacepard-logo.svg" alt="Pacepard Logo" width="400">
+<img src="src/assets/pacepard-logo.svg" alt="Pacepard Logo" width="400">
 
 ## Pacepard Application (website)
 
