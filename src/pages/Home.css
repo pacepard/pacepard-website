@@ -1,10 +1,29 @@
+.developer-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  background-color: #e7e7e7; 
+  /* background-color: ;  */
+  border-radius: 5px; 
+}
+
+
+.featture-tags {
+  align-items: flex-start;
+}
+
+
 .hero-section {
   padding-top: 140px;
-  padding-bottom: 40px;
-  background-color: #FFFFFF;
+  padding-bottom: 140px;
+  background-color: #f1ffee;
   position: relative;
   min-height: auto;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .hero-background {
@@ -104,7 +123,6 @@
   font-weight: 700;
   font-size: 52px;
   line-height: 60px;
-  text-transform: capitalize;
   color: #121212;
   margin: 0;
   display: inline-block;

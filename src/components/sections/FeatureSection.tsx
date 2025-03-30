@@ -1,6 +1,7 @@
 import React from 'react';
 import * as FeatherIcons from 'react-feather';
 import './FeatureSection.css';
+import Tag from '../common/Tags';
 
 interface FeatureItem {
   icon: string;
@@ -9,17 +10,23 @@ interface FeatureItem {
 }
 
 interface FeatureSectionProps {
-  title: string;
+  title: React.ReactNode;
   subtitle?: string;
   features: FeatureItem[];
   image: string;
+  TagText: string;
+  TagTextColor: string;
+  TagBgColor: string;
 }
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({
   title,
   subtitle,
   features,
-  image
+  image,
+  TagText,
+  TagBgColor,
+  TagTextColor
 }) => {
   const renderIcon = (iconName: string) => {
     const Icon = (FeatherIcons as any)[iconName.charAt(0).toUpperCase() + iconName.slice(1)];
@@ -28,7 +35,11 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 
   return (
     <section className="feature-section">
+      
       <div className="feature-content">
+      <div className="feature-tags">
+      <Tag text={TagText} textColor={TagTextColor} bgColor={TagBgColor} />
+       </div>
         <div className="feature-content-wrapper">
           <div className="feature-text-container">
             <h2 className="feature-title">{title}</h2>
