@@ -54,7 +54,7 @@ const Home: React.FC = () => {
       icon: "code",
       title: "Measure Competency, Not Course Completion",
       description:
-       "Track real skill growth with problem-sets completion milestones, and project-based evaluations."
+        "Track real skill growth with problem-sets completion milestones, and project-based evaluations.",
     },
     {
       icon: "users",
@@ -149,15 +149,52 @@ const Home: React.FC = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          d="M15.5 12V16.5C15.5 17.33 14.83 18 14 18H5C4.17 18 3.5 17.33 3.5 16.5V7.5C3.5 6.67 4.17 6 5 6H14C14.83 6 15.5 6.67 15.5 7.5V12ZM15.5 12L20.5 7.5V16.5L15.5 12Z"
-                          stroke="#3D25EF"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="16"
+                          rx="2"
+                          stroke="#030333"
+                          stroke-width="1.5"
                         />
+
+                        <line
+                          x1="3"
+                          y1="9"
+                          x2="21"
+                          y2="9"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                        />
+
+                        <line
+                          x1="7"
+                          y1="2"
+                          x2="7"
+                          y2="6"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <line
+                          x1="17"
+                          y1="2"
+                          x2="17"
+                          y2="6"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+
+                        <circle cx="7" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="12" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="17" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="7" cy="17" r="1.5" fill="#030333" />
+                        <circle cx="12" cy="17" r="1.5" fill="#030333" />
+                        <circle cx="17" cy="17" r="1.5" fill="#030333" />
                       </svg>
-                      See how it works
+                      Book a Demo
                     </button>
                   </div>
                 </div>
@@ -172,8 +209,6 @@ const Home: React.FC = () => {
         subtitle="Stop wasting money on random developer marketing — focus on the right users with AI-powered insights and engagement tools."
         features={features}
         image="/images/pacepard-website-dashboardx.png"
-
-        
         TagText="API Companies"
         TagBgColor="#ccfdff"
         TagTextColor=""
@@ -188,8 +223,6 @@ const Home: React.FC = () => {
         subtitle="Every API call, project, and contribution counts — earn credits, perks, and exclusive opportunities as you build."
         features={featuresTwo}
         image="/images/pacepard-website-dashboard.png"
-
-        
         TagText="Developers"
         TagBgColor="#f3faca"
         TagTextColor=""
@@ -200,7 +233,6 @@ const Home: React.FC = () => {
         subtitle="Prepare your learners for real-world tech roles with hands-on industry projects and competency-driven challenges."
         features={featuresThree}
         image="/images/pacepard-website-dashboardy.png"
-
         TagText="EdTech Companies"
         TagBgColor="#f1ffee"
         TagTextColor=""

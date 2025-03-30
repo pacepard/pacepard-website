@@ -222,7 +222,7 @@
 }
 
 .hero-button.primary {
-  background: linear-gradient(47.62deg, #1d79ff -15.2%, #05e0e9 89.54%);
+  background: #030333;
   color: #FFFFFF;
   border: none;
 }
@@ -233,24 +233,22 @@
   align-items: center;
   padding: 16px 24px;
   gap: 12px;
-  min-width: 220px;
+  min-width: 200px;
   height: 56px;
-  background: rgba(5, 224, 233, 0.1);
+  background: white;
   border-radius: 6px 6px 0px 6px;
-  border: 3px solid transparent;
-  background-image: linear-gradient(rgba(5, 224, 233, 0.1), rgba(5, 224, 233, 0.1)), 
-                    linear-gradient(47.62deg, #1d79ff -15.2%, #7ed957 89.54%);
+  border: 2px solid #030333;
+  border-color: #030333; 
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  color: #121212;
+  color: #030333;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
 }
 
 .hero-button.secondary:hover {
-  background-image: linear-gradient(rgba(5, 224, 233, 0.15), rgba(5, 224, 233, 0.15)), 
-                    linear-gradient(47.62deg, #1d79ff -15.2%, #7ed957 89.54%);
+  background-image: #030333;
 }
 
 .hero-button.secondary svg {
@@ -266,10 +264,6 @@
 
 .hero-button.primary:hover {
   opacity: 0.9;
-}
-
-.hero-button.secondary:hover {
-  background-image: linear-gradient(#EBD6FF, #EBD6FF), linear-gradient(47.62deg, #3D25EF -15.2%, #9626ED 89.54%);
 }
 
 .floating-names {
