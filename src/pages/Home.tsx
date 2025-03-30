@@ -137,11 +137,10 @@ const Home: React.FC = () => {
                   <p className="hero-description">
                     <span>
                       Struggling with developer retention? Pacepard tracks API
-                      usage
-                    </span>
-                    <span>
-                      milestones and automatically reward active developers—so
+                      usage ilestones and automatically reward active                        developers—so
                       they keep coming back.
+                    </span><span>
+
                     </span>
                   </p>
                   <div className="hero-buttons">

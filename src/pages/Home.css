@@ -252,7 +252,7 @@
 @media (max-width: 576px) {
   .main-title h1,
   .main-title h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.8;
   }
 
@@ -363,6 +363,8 @@
     flex-direction: column;
     width: 100%;
     gap: 12px;
+    margin-top: 0px;
+    
   }
 
   .hero-button {
@@ -559,7 +561,7 @@
 @media (max-width: 576px) {
   .hero-section {
     padding-top: 90px;
-    padding-bottom: 24px;
+    padding-bottom: 80px;
   }
 
   .main-title {
@@ -590,7 +592,7 @@
 
   .main-title h1,
   .main-title h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.8;
   }
 
@@ -613,7 +615,7 @@
 @media (max-width: 576px) {
   .hero-section {
     padding-top: 90px;
-    padding-bottom: 24px;
+    padding-bottom: 80px;
   }
 
   .main-title {
@@ -634,8 +636,8 @@
 
   .hero-description {
     font-size: 14px;
-    line-height: 125%;
-    margin: 4px auto 12px;
+    line-height: 150%;
+    padding-bottom: 0;
   }
 
   .corner-dot {
