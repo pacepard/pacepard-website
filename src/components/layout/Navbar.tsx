@@ -1,39 +1,43 @@
-import React from 'react';
-import { Navbar as BootstrapNavbar, Container, Nav, Button } from 'react-bootstrap';
-import { useAuth } from '../../context/auth/AuthContext';
-import PacepardLogo from '../../assets/pacepard-logo.svg';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import GetStartedButton from '../common/GetStartedButton';
 import './Navbar.css';
+import PacepardLogo from '../../assets/pacepard-logo.svg';
 
 const Navbar: React.FC = () => {
-  const { isAuthenticated, logout } = useAuth();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <BootstrapNavbar fixed="top" className="navbar">
-      <Container className="navbar-container">
-        <BootstrapNavbar.Brand href="/" className="navbar-logo-container">
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo-container">
           <img src={PacepardLogo} alt="Pacepard Logo" className="navbar-logo" />
-        </BootstrapNavbar.Brand>
+        </Link>
 
-        <Nav className="navbar-links">
-          <Nav.Link href="/products" className="nav-link">Products</Nav.Link>
-          <Nav.Link href="/pricing" className="nav-link">APIs & Devtools</Nav.Link>
-          <Nav.Link href="/resources" className="nav-link">Rewards</Nav.Link>
-          <Nav.Link href="/salesforce-seeker" className="nav-link">Use Cases</Nav.Link>
-        </Nav>
+        <div 
+          className={`hamburger ${isOpen ? 'active' : ''}`} 
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <Nav>
-          {isAuthenticated ? (
-            <>
-              <Nav.Link href="/dashboard" className="nav-link">Dashboard</Nav.Link>
-              <Button variant="link" onClick={logout} className="nav-link">Logout</Button>
-            </>
-          ) : (
+        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+          <Link to="/products" className="nav-link">Products</Link>
+          <Link to="/api-devtools" className="nav-link">API & Devtools</Link>
+          <Link to="/rewards" className="nav-link">Rewards</Link>
+          <Link to="/use-cases" className="nav-link">Use Cases</Link>
+          <div className="desktop-only">
             <GetStartedButton />
-          )}
-        </Nav>
-      </Container>
-    </BootstrapNavbar>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 

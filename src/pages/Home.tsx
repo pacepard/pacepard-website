@@ -111,28 +111,32 @@ const Home: React.FC = () => {
 
                   {/* Rest of the content remains the same */}
                   <div className="main-title">
-                    <h1>Turn One-Time&nbsp;</h1>
-                    <div className="title-box">
-                      <h1>API Users</h1>
-                      <div className="corner-dot top-right"></div>
-                      <div className="corner-dot bottom-right"></div>
-                      <div className="corner-dot bottom-left"></div>
-                      <div className="corner-dot top-left"></div>
+                    <div className="first-line">
+                      <h1>Turn One-Time</h1>
+                      <div className="title-box">
+                        <h1>API Users</h1>
+                        <div className="corner-dot top-right"></div>
+                        <div className="corner-dot bottom-right"></div>
+                        <div className="corner-dot bottom-left"></div>
+                        <div className="corner-dot top-left"></div>
+                      </div>
                     </div>
-                    <h2>&nbsp;into</h2>
-                    <div className="title-box">
-                      <h2>loyal developers</h2>
-                      <div className="corner-dot top-right"></div>
-                      <div className="corner-dot bottom-right"></div>
-                      <div className="corner-dot bottom-left"></div>
-                      <div className="corner-dot top-left"></div>
+                    <div className="second-line">
+                      <h2>Into</h2>
+                      <div className="title-box">
+                        <h2>Loyal Developers With</h2>
+                        <div className="corner-dot top-right"></div>
+                        <div className="corner-dot bottom-right"></div>
+                        <div className="corner-dot bottom-left"></div>
+                        <div className="corner-dot top-left"></div>
+                      </div>
                     </div>
-                    <h2>&nbsp;with</h2>
-                    <h2>AI-Driven Engagement & Rewards</h2>
+                    <h2>gamified Engagement</h2>
+                    <h2>and Rewards</h2>
+        
                   </div>
                   <p className="hero-description">
-                    <span>Struggling with developer retention? Pacepard uses AI to track API adoption</span>
-                    <span>milestones and automatically reward active developers—so they keep coming back.</span>
+                    <strong>Struggling with developer retention?</strong> Pacepard uses AI to track API adoption milestones and automatically reward active developers—so they keep coming back.
                   </p>
                   <div className="hero-buttons">
                     <GetStartedButton variant="hero" />
