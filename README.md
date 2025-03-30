@@ -1,46 +1,128 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="assets/pacepard-logo.svg" alt="Pacepard Logo" width="400">
 
-## Available Scripts
+## Pacepard Application (website)
 
-In the project directory, you can run:
+### AI-powered developer reward and engagement platform.
 
-### `npm start`
+> Pacepard is an AI-Powered developer reward and engagement software. Pacepard helps API and DevTools Companies grow loyal developers through usage tracking and rewards. Boost API adoption with gamification, smart rewards, and developer insights.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+By using Pacepard, developers, companies, and EdTech providers can collaborate, track talent progress, and host challenges while leveraging AI-powered engagement analytics.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Introduction
 
-### `npm test`
+API companies want developers to use their APIs regularly, but keeping them engaged is a struggle. They spend tons of money on marketing, events, and sponsorships, yet most developers try an API once and never come back.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On the other hand, developers—whether beginners or experienced—need different things to stay motivated. Some want easier ways to learn, while others look for meaningful rewards or ways to build their reputation.  
 
-### `npm run build`
+That’s where **Pacepard** comes in.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pacepard is an AI-powered platform that helps API and DevTools companies **track developer engagement, reward usage, and build long-term loyalty**. Instead of just hoping developers stick around, companies can now see exactly how their APIs are being used, identify top contributors, and automatically offer rewards that keep developers coming back.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For developers, Pacepard makes API adoption more rewarding—literally. Whether it’s earning points, unlocking premium features, or gaining credibility with verified achievements, using APIs now comes with real benefits.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The bottom line? API adoption shouldn’t be a guessing game. **Pacepard turns developer engagement into a smart, trackable, and rewarding experience.**
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Core Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage Analytics
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Real-time API adoption monitoring** — track developer engagement across projects.  
+- **Predictive churn insights** — identify inactive users before they drop off.  
+- **Power user identification** — spot top contributors & automate personalized incentives.  
+- **Behavior-driven recommendations** — understand what features developers use most & optimize accordingly.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Rewards & Loyalty Engine
 
-## Learn More
+- **Dynamic API rewards** — API credits, discounts, premium access, and cash bonuses.  
+- **Points-based, tiered, & subscription rewards** — continuous engagement earns exclusive perks.  
+- **Risk-free API testing with sandbox environments** — encourages more experimentation.  
+- **Project-powered certifications & badges** — help developers build credibility while using APIs.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Gamification & Engagement
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Gamified achievements** — badges, leaderboards, and milestone-based rewards.  
+- **Leaderboard-based incentives** — recognition for top API users & contributors.  
+- **Hackathons & coding challenges** — structured competitions that reward API adoption.  
+- **Developer quests & milestone-based learning** — progress through levels based on API usage.  
+- **Community challenges** — peer-driven incentives for API adoption & collaboration.  
+
+### Loyalty Campaigns
+
+- **Automated engagement campaigns** — target developers with personalized outreach.  
+- **Referral & advocacy programs** — reward developers for bringing in new users.  
+- **Loyalty emails & notifications** — keep developers engaged with updates & reward reminders.  
+- **API usage-based perks** — automatically unlock benefits as developers increase API calls.  
+
+
+## Technologies
+
+- **TypeScript**: For robust type checking and cleaner codebase.
+- **React (Frontend)**: Modern frontend framework for a responsive and interactive user interface.
+- **Hosting**: The site is hosted on **AWS S3** with **CloudFront** for global content delivery.  
+- **Domain**: Managed via **Namecheap**.  
+- **SSL Security**: Provided by **AWS Certificate Manager (ACM)** for secure connections.  
+
+
+## Project Setup & Maintenance Guide
+
+## Prerequisites  
+Ensure you have the following installed:  
+- **Node.js** (Recommended: `LTS` version)  
+- **npm** or **yarn**  
+
+## Getting Started  
+
+### 1. Clone the Repository  
+```sh
+git clone https://github.com/thebuildershq/pacepard-website.git
+cd pacepard-website
+```
+
+### 2. Install Dependencies  
+Using npm:  
+```sh
+npm install
+```
+Or using yarn:  
+```sh
+yarn install
+```
+
+### 3. Set Up Environment Variables  
+Duplicate `.env.example` and rename it to `.env`, then update the values accordingly.  
+
+### 4. Start the Development Server  
+```sh
+npm start
+```
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser.  
+
+### 5. Run Tests  
+```sh
+npm test
+```
+Runs tests in interactive watch mode.  
+
+### 6. Build for Production  
+```sh
+npm run build
+```
+Compiles the app into optimized production-ready files inside the `build/` folder.  
+
+ 
+## Contributing  
+1. Create a new branch for your feature or bug fix:  
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
+2. Make your changes and commit:  
+   ```sh
+   git commit -m "feature: add new feature"
+   ```
+   Or using yarn:  
+    ```sh
+    git commit -m "enhancement: add ehancement"
+    ```
+3. Push to your branch and open a PR to **staging**
