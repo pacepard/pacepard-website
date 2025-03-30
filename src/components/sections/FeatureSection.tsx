@@ -33,34 +33,51 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
     return Icon ? <Icon size={24} className="feature-icon" /> : null;
   };
 
+  const FeatureGrid = () => (
+    <div className="feature-grid">
+      {features.map((feature, index) => (
+        <div key={index} className="feature-item">
+          <div className="feature-icon-wrapper">
+            {renderIcon(feature.icon)}
+          </div>
+          <h3>{feature.title}</h3>
+          <p>{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <section className="feature-section">
-      
       <div className="feature-content">
-      <div className="feature-tags">
-      <Tag text={TagText} textColor={TagTextColor} bgColor={TagBgColor} />
-       </div>
-        <div className="feature-content-wrapper">
+        <div className="feature-tags">
+          <Tag text={TagText} textColor={TagTextColor} bgColor={TagBgColor} />
+        </div>
+        
+        {/* Desktop View */}
+        <div className="desktop-view">
+          <div className="feature-content-wrapper">
+            <div className="feature-text-container">
+              <h2 className="feature-title">{title}</h2>
+              {subtitle && <p className="feature-subtitle">{subtitle}</p>}
+            </div>
+            <FeatureGrid />
+          </div>
+          <div className="feature-image-container">
+            <img src={image} alt="Feature visualization" className="feature-image" />
+          </div>
+        </div>
+
+        {/* Mobile View */}
+        <div className="mobile-view">
           <div className="feature-text-container">
             <h2 className="feature-title">{title}</h2>
             {subtitle && <p className="feature-subtitle">{subtitle}</p>}
           </div>
-
-          <div className="feature-grid">
-            {features.map((feature, index) => (
-              <div key={index} className="feature-item">
-                <div className="feature-icon-wrapper">
-                  {renderIcon(feature.icon)}
-                </div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </div>
-            ))}
+          <div className="feature-image-container">
+            <img src={image} alt="Feature visualization" className="feature-image" />
           </div>
-        </div>
-
-        <div className="feature-image-container">
-          <img src={image} alt="Feature visualization" className="feature-image" />
+          <FeatureGrid />
         </div>
       </div>
     </section>
