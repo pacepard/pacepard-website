@@ -59,20 +59,21 @@
   text-align: left;
   padding: 10px;
 }
-
+/* 
 .feature-icon-wrapper {
-  width: 100px;  /* Doubled from 48px */
-  height: 100px; /* Doubled from 48px */
+  width: 100px;
+  height: 100px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: -10px;
-}
+  Removed background and shadow properties */
+/* } */
 
 .feature-icon {
   color: #121212;
-  transform: scale(2); /* Double the icon size */
+  transform: scale(2);
 }
 
 .feature-item h3 {
@@ -147,15 +148,16 @@
   }
 
   .feature-item {
-    padding: 16px; /* Increased padding */
-    background: rgba(255, 255, 255, 0.5); /* Added subtle background */
+    padding: 16px;
     border-radius: 8px;
+    /* Removed background */
   }
 
-  .feature-icon-wrapper {
-    width: 80px; /* Reduced size for mobile */
+   .feature-icon-wrapper {
+    width: 80px;
     height: 80px;
-  }
+    /* No background or shadow needed */
+   } 
 
   .feature-icon {
     transform: scale(1.5); /* Reduced scale for mobile */
