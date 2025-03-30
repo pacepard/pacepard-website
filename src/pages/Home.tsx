@@ -1,73 +1,72 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import GetStartedButton from "../components/common/GetStartedButton";
 import Footer from "../components/Footer";
 import FeatureSection from "../components/sections/FeatureSection";
-import CTASection from '../components/sections/CTASection';
+import CTASection from "../components/sections/CTASection";
 
 const Home: React.FC = () => {
   const features = [
     {
-      icon: "activity",
-      title: "AI-Powered Sales Assessment",
-      description:
-        "Track real-time sales performance metrics to identify top-performing candidates instantly.",
-    },
-    {
-      icon: "target",
-      title: "Smart Performance Tracking",
-      description:
-        "Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.",
-    },
-    {
       icon: "zap",
-      title: "Sales Performance Dashboard",
+      title: "Boost Developer Adoption and Usage",
       description:
-        "Get instant insights into candidate performance and identify areas for improvement.",
+        "Increase API usage with personalized challenges, rewards, and insights that keep developers coming back.",
+    },
+    {
+      icon: "activity",
+      title: " Usage Tracking and Analytics",
+      description:
+        "Know exactly which developers are serious about your API through our API usage milestones.",
+    }, // change gift icon
+    {
+      icon: "gift",
+      title: "Real-Time API Performance & Insights",
+      description:
+        "Track API performance and developer activity in real time to improve API experience and make data-driven decisions.",
     },
   ];
 
   const featuresTwo = [
     {
-      icon: "activity",
-      title: "Who’s actively integrating your API",
-      description:
-        "Track real-time sales performance metrics to identify top-performing candidates instantly.",
-    },
-    {
       icon: "target",
-      title: "Which developers are scaling API usage",
+      title: "Boost your projects with APIs usage perks",
       description:
-        "Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.",
+        "Test, build, and power your projects, experiments, or the next big startup idea.",
     },
     {
-      icon: "zap",
-      title: " Mini-challenges that reward API adoption",
+      icon: "briefcase",
+      title: "Turn your contributions into Rewards",
       description:
-        "Get instant insights into candidate performance and identify areas for improvement.",
+        "Work on real challenges, complete projects, and create a portfolio that gets you hired.",
+    },
+    {
+      icon: "users",
+      title: "Work with teams on real-world problems",
+      description:
+        "Solve real-industry challenges side-by-side with cross-functional teams.",
     },
   ];
 
   const featuresThree = [
     {
-      icon: "activity",
-      title: "AI-Powered Sales Assessment",
+      icon: "code",
+      title: "Measure Competency, Not Course Completion",
       description:
-        "Track real-time sales performance metrics to identify top-performing candidates instantly.",
+        "Track real skill growth with problem-sets completion milestones, and project-based evaluations.",
     },
     {
-      icon: "target",
-      title: "Smart Performance Tracking",
+      icon: "users",
+      title: "Bridge the Gap Between Learning & Hiring",
       description:
-        "Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.",
+        "Ensure graduates have job-ready skills with verified project completions and employer-backed validation.",
     },
     {
-      icon: "zap",
-      title: "Sales Performance Dashboard",
+      icon: "shield",
+      title: "Scale Your Impact & Attract More Learners",
       description:
-        "Get instant insights into candidate performance and identify areas for improvement.",
+        "Offer cutting-edge learning programs that leverages industry partners from around the world.",
     },
   ];
 
@@ -136,7 +135,14 @@ const Home: React.FC = () => {
         
                   </div>
                   <p className="hero-description">
-                    <strong>Struggling with developer retention?</strong> Pacepard uses AI to track API adoption milestones and automatically reward active developers—so they keep coming back.
+                    <span>
+                      Struggling with developer retention? Pacepard tracks API
+                      usage
+                    </span>
+                    <span>
+                      milestones and automatically reward active developers—so
+                      they keep coming back.
+                    </span>
                   </p>
                   <div className="hero-buttons">
                     <GetStartedButton variant="hero" />
@@ -148,15 +154,52 @@ const Home: React.FC = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          d="M15.5 12V16.5C15.5 17.33 14.83 18 14 18H5C4.17 18 3.5 17.33 3.5 16.5V7.5C3.5 6.67 4.17 6 5 6H14C14.83 6 15.5 6.67 15.5 7.5V12ZM15.5 12L20.5 7.5V16.5L15.5 12Z"
-                          stroke="#3D25EF"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="16"
+                          rx="2"
+                          stroke="#030333"
+                          stroke-width="1.5"
                         />
+
+                        <line
+                          x1="3"
+                          y1="9"
+                          x2="21"
+                          y2="9"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                        />
+
+                        <line
+                          x1="7"
+                          y1="2"
+                          x2="7"
+                          y2="6"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <line
+                          x1="17"
+                          y1="2"
+                          x2="17"
+                          y2="6"
+                          stroke="#030333"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+
+                        <circle cx="7" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="12" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="17" cy="13" r="1.5" fill="#030333" />
+                        <circle cx="7" cy="17" r="1.5" fill="#030333" />
+                        <circle cx="12" cy="17" r="1.5" fill="#030333" />
+                        <circle cx="17" cy="17" r="1.5" fill="#030333" />
                       </svg>
-                      See how it works
+                      Book a Demo
                     </button>
                   </div>
                 </div>
@@ -168,23 +211,36 @@ const Home: React.FC = () => {
 
       <FeatureSection
         title="Grow loyal developers and build long-term retention."
-        subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
+        subtitle="Stop wasting money on random developer marketing — focus on the right users with AI-powered insights and engagement tools."
         features={features}
-        image="/images/pacepard-website-dashboard.png"
-      />
-
-      <FeatureSection
-        title="Grow loyal developers and build long-term retention."
-        subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
-        features={featuresTwo}
         image="/images/pacepard-website-dashboardx.png"
+        TagText="API Companies"
+        TagBgColor="#ccfdff"
+        TagTextColor=""
       />
 
       <FeatureSection
-        title="Grow loyal developers and build long-term retention."
-        subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
+        title={
+          <>
+            Turn every <br /> API usage into meaningful Rewards
+          </>
+        }
+        subtitle="Every API call, project, and contribution counts — earn credits, perks, and exclusive opportunities as you build."
+        features={featuresTwo}
+        image="/images/pacepard-website-dashboard.png"
+        TagText="Developers"
+        TagBgColor="#f3faca"
+        TagTextColor=""
+      />
+
+      <FeatureSection
+        title="Train job-ready developers with real-industry problem sets"
+        subtitle="Prepare your learners for real-world tech roles with hands-on industry projects and competency-driven challenges."
         features={featuresThree}
         image="/images/pacepard-website-dashboardy.png"
+        TagText="EdTech Companies"
+        TagBgColor="#f1ffee"
+        TagTextColor=""
       />
 
       <CTASection />
