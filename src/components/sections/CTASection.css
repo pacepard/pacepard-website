@@ -33,6 +33,26 @@
   margin-bottom: 64px;
 }
 
+@media (max-width: 576px) {
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .secondary-button {
+    width: 100%;
+    min-width: unset;
+    justify-content: center;
+  }
+
+  .cta-content {
+    padding: 0 16px;
+  }
+}
+
 .secondary-button {
   box-sizing: border-box;
   display: flex;
@@ -78,7 +98,7 @@
   padding: 16px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); */
   flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
