@@ -43,7 +43,7 @@
   top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  align-items: flex-start;
 }
 
 .logo {
@@ -124,7 +124,6 @@
   margin: 24px auto 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -137,7 +136,7 @@
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -153,7 +152,7 @@
   }
 
   .logo-social {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -201,12 +200,14 @@
   }
 
   .footer-left {
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   .footer-description {
-    text-align: center;
+    text-align: left;
     margin: 24px auto;
   }
 
