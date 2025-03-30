@@ -33,6 +33,26 @@
   margin-bottom: 64px;
 }
 
+@media (max-width: 576px) {
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .secondary-button {
+    width: 100%;
+    min-width: unset;
+    justify-content: center;
+  }
+
+  .cta-content {
+    padding: 0 16px;
+  }
+}
+
 .secondary-button {
   box-sizing: border-box;
   display: flex;

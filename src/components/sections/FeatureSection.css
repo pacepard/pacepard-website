@@ -43,64 +43,7 @@
 .feature-text-container {
   max-width: 500px;
   text-align: left;
-  
-}
-
-.feature-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Reduced from 32px */
-  margin-bottom: 0px;
-  margin-top: 50px;
-}
-
-.feature-item {
-  text-align: left;
-  padding: 10px;
-}
-
-.feature-icon-wrapper {
-  width: 100px;  /* Doubled from 48px */
-  height: 100px; /* Doubled from 48px */
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -10px;
-}
-
-.feature-icon {
-  color: #121212;
-  transform: scale(2); /* Double the icon size */
-}
-
-.feature-item h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: #121212;
-  line-height: 1.3;
-}
-
-.feature-item p {
-  font-size: 14px;
-  color: #4F4F4F;
-  line-height: 1.5;
-}
-
-.feature-image-container {
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-}
-
-.feature-image {
-  width: 100%;
-  height: auto;
-  display: block;
+  margin-right: auto; /* Add this to align container to the left */
 }
 
 @media (max-width: 968px) {
@@ -110,13 +53,14 @@
   
   .feature-text-container {
     max-width: 100%;
-    text-align: center;
+    text-align: left; /* Change from center to left */
     margin-bottom: 48px;
+    margin-right: 0; /* Reset margin for mobile */
   }
   
   .feature-title,
   .feature-subtitle {
-    text-align: center;
+    text-align: left; /* Change from center to left */
   }
   
   .feature-grid {

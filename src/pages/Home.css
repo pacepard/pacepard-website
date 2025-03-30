@@ -358,6 +358,23 @@
   z-index: 2;
 }
 
+@media (max-width: 576px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-button.secondary {
+    min-width: unset;
+  }
+}
+
 .hero-button {
   padding: 16px 24px;
   border-radius: 8px;
