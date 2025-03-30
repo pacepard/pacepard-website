@@ -34,11 +34,7 @@ const Content = styled.div`
 `;
 
 const ErrorCode = styled.h1`
-  font-size: 6rem;
-  font-weight: 700;
-  color: #6366f1;
-  line-height: 1;
-  margin-bottom: 1rem;
+  color: #1d79ff; /* Updated to secondary color */
 `;
 
 const Title = styled.h2`
@@ -57,7 +53,7 @@ const Description = styled.p`
 const HomeButton = styled(Link)`
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #6366f1;
+  background-color: #1d79ff;
   color: white;
   text-decoration: none;
   border-radius: 6px;

@@ -5,6 +5,7 @@ import "./Home.css";
 import GetStartedButton from "../components/common/GetStartedButton";
 import Footer from "../components/Footer";
 import FeatureSection from "../components/sections/FeatureSection";
+import CTASection from '../components/sections/CTASection';
 
 const Home: React.FC = () => {
   const features = [
@@ -88,10 +89,8 @@ const Home: React.FC = () => {
                     <h2>AI-Driven Engagement & Rewards</h2>
                   </div>
                   <p className="hero-description">
-                    <strong>Struggling with developer retention? </strong>
-                    Pacepard uses AI to track API adoption milestones and
-                    automatically reward active developers—so they keep coming
-                    back.
+                    <span>Struggling with developer retention? Pacepard uses AI to track API adoption</span>
+                    <span>milestones and automatically reward active developers—so they keep coming back.</span>
                   </p>
                   <div className="hero-buttons">
                     <GetStartedButton variant="hero" />
@@ -142,6 +141,7 @@ const Home: React.FC = () => {
         image="/images/pacepard-website-dashboard.png"
       />
 
+      <CTASection />
       <Footer />
     </>
   );
