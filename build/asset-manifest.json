@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1da323a1.css",
-    "main.js": "/static/js/main.baadb5a0.js",
+    "main.css": "/static/css/main.ba384d36.css",
+    "main.js": "/static/js/main.cca40b5c.js",
     "static/js/453.8ea4b095.chunk.js": "/static/js/453.8ea4b095.chunk.js",
-    "static/media/preview-text.svg": "/static/media/preview-text.55e59b36a470ab1ea4bc02ae11f343cb.svg",
-    "static/media/logo.svg": "/static/media/logo.71b969b30acb2b6da6574be4b46d259f.svg",
+    "static/media/pacepard-logo.svg": "/static/media/pacepard-logo.80ce0592c1a0de52af0061bb26f4f28d.svg",
+    "static/media/pacepard-logo-white.svg": "/static/media/pacepard-logo-white.e37abd4648dbb7454184a09062942c2a.svg",
     "index.html": "/index.html",
-    "main.1da323a1.css.map": "/static/css/main.1da323a1.css.map",
-    "main.baadb5a0.js.map": "/static/js/main.baadb5a0.js.map",
+    "main.ba384d36.css.map": "/static/css/main.ba384d36.css.map",
+    "main.cca40b5c.js.map": "/static/js/main.cca40b5c.js.map",
     "453.8ea4b095.chunk.js.map": "/static/js/453.8ea4b095.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1da323a1.css",
-    "static/js/main.baadb5a0.js"
+    "static/css/main.ba384d36.css",
+    "static/js/main.cca40b5c.js"
   ]
 }

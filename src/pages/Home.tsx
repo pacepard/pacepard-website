@@ -29,6 +29,48 @@ const Home: React.FC = () => {
     },
   ];
 
+  const featuresTwo = [
+    {
+      icon: "activity",
+      title: "Who’s actively integrating your API",
+      description:
+        "Track real-time sales performance metrics to identify top-performing candidates instantly.",
+    },
+    {
+      icon: "target",
+      title: "Which developers are scaling API usage",
+      description:
+        "Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.",
+    },
+    {
+      icon: "zap",
+      title: " Mini-challenges that reward API adoption",
+      description:
+        "Get instant insights into candidate performance and identify areas for improvement.",
+    },
+  ];
+
+  const featuresThree = [
+    {
+      icon: "activity",
+      title: "AI-Powered Sales Assessment",
+      description:
+        "Track real-time sales performance metrics to identify top-performing candidates instantly.",
+    },
+    {
+      icon: "target",
+      title: "Smart Performance Tracking",
+      description:
+        "Evaluate sales skills automatically through discovery calls, negotiations, and closing rates.",
+    },
+    {
+      icon: "zap",
+      title: "Sales Performance Dashboard",
+      description:
+        "Get instant insights into candidate performance and identify areas for improvement.",
+    },
+  ];
+
   return (
     <>
       <div className="home-container">
@@ -130,15 +172,15 @@ const Home: React.FC = () => {
       <FeatureSection
         title="Grow loyal developers and build long-term retention."
         subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
-        features={features}
-        image="/images/pacepard-website-dashboard.png"
+        features={featuresTwo}
+        image="/images/pacepard-website-dashboardx.png"
       />
 
       <FeatureSection
         title="Grow loyal developers and build long-term retention."
         subtitle="Stop wasting money on random developer marketing—focus on the right users with AI-powered insights and engagement tools."
-        features={features}
-        image="/images/pacepard-website-dashboard.png"
+        features={featuresThree}
+        image="/images/pacepard-website-dashboardy.png"
       />
 
       <CTASection />
