@@ -33,20 +33,6 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
     return Icon ? <Icon size={24} className="feature-icon" /> : null;
   };
 
-  const FeatureGrid = () => (
-    <div className="feature-grid">
-      {features.map((feature, index) => (
-        <div key={index} className="feature-item">
-          <div className="feature-icon-wrapper">
-            {renderIcon(feature.icon)}
-          </div>
-          <h3>{feature.title}</h3>
-          <p>{feature.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-
   return (
     <section className="feature-section">
       <div className="feature-content">
@@ -61,13 +47,23 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
               <h2 className="feature-title">{title}</h2>
               {subtitle && <p className="feature-subtitle">{subtitle}</p>}
             </div>
-            <FeatureGrid />
+            <div className="feature-grid">
+              {features.map((feature, index) => (
+                <div key={index} className="feature-item">
+                  <div className="feature-icon-wrapper">
+                    {renderIcon(feature.icon)}
+                  </div>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="feature-image-container">
             <img src={image} alt="Feature visualization" className="feature-image" />
           </div>
         </div>
-
+    
         {/* Mobile View */}
         <div className="mobile-view">
           <div className="feature-text-container">
@@ -77,7 +73,19 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           <div className="feature-image-container">
             <img src={image} alt="Feature visualization" className="feature-image" />
           </div>
-          <FeatureGrid />
+          <div className="feature-grid">
+            {features.map((feature, index) => (
+              <div key={index} className="feature-item">
+                <div className="feature-icon-wrapper">
+                  {renderIcon(feature.icon)}
+                </div>
+                <div className="feature-item-content">
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
