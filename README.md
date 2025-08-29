@@ -1,67 +1,55 @@
 
 <img src="/blocks/pacepard.svg" alt="Pacepard Logo" width="400">
 
-## Pacepard Application (website)
+## Pacepard (website)
 
-### AI-powered developer reward and engagement platform.
+### Helping African talents learn and grow by doing..
 
-> Pacepard is an AI-Powered developer reward and engagement software. Pacepard helps API and DevTools Companies grow loyal developers through usage tracking and rewards. Boost API adoption with gamification, smart rewards, and developer insights.
+> Pacepard is a reward and engagement software for talents and product teams.  We support the development of Open Source Software that solves problems faced daily by Africans, and we are creating points of entry into machine learning research.
 
-By using Pacepard, developers, companies, and EdTech providers can collaborate, track talent progress, and host challenges while leveraging AI-powered engagement analytics.
+By using Pacepard, African talents, organisations, and EdTech providers can collaborate, track talent skill mastery progress, and host competitions while leveraging our AI-powered engagement analytics.
 
-## Introduction
 
-API companies want developers to use their APIs regularly, but keeping them engaged is a struggle. They spend tons of money on marketing, events, and sponsorships, yet most developers try an API once and never come back.  
-
-On the other hand, developers—whether beginners or experienced—need different things to stay motivated. Some want easier ways to learn, while others look for meaningful rewards or ways to build their reputation.  
-
-That’s where **Pacepard** comes in.  
-
-Pacepard is an AI-powered platform that helps API and DevTools companies **track developer engagement, reward usage, and build long-term loyalty**. Instead of just hoping developers stick around, companies can now see exactly how their APIs are being used, identify top contributors, and automatically offer rewards that keep developers coming back.  
-
-For developers, Pacepard makes API adoption more rewarding—literally. Whether it’s earning points, unlocking premium features, or gaining credibility with verified achievements, using APIs now comes with real benefits.  
-
-The bottom line? API adoption shouldn’t be a guessing game. **Pacepard turns developer engagement into a smart, trackable, and rewarding experience.**
+The bottom line? Gaining mastery be a guessing game. **Pacepard turns talent education and skill mastery into a smart, trackable, and rewarding experience.**
 
 
 ## Core Features
 
 ### Usage Analytics
 
-- **Real-time API adoption monitoring** — track developer engagement across projects.  
+- **Real-time API adoption monitoring** — track talent engagement across projects.  
 - **Predictive churn insights** — identify inactive users before they drop off.  
 - **Power user identification** — spot top contributors & automate personalized incentives.  
-- **Behavior-driven recommendations** — understand what features developers use most & optimize accordingly.  
+- **Behavior-driven recommendations** — understand what features talents use most & optimize accordingly.  
 
 ### Rewards & Loyalty Engine
 
 - **Dynamic API rewards** — API credits, discounts, premium access, and cash bonuses.  
 - **Points-based, tiered, & subscription rewards** — continuous engagement earns exclusive perks.  
 - **Risk-free API testing with sandbox environments** — encourages more experimentation.  
-- **Project-powered certifications & badges** — help developers build credibility while using APIs.  
+- **Project-powered certifications & badges** — help talents build credibility while using APIs.  
 
 ### Gamification & Engagement
 
 - **Gamified achievements** — badges, leaderboards, and milestone-based rewards.  
 - **Leaderboard-based incentives** — recognition for top API users & contributors.  
 - **Hackathons & coding challenges** — structured competitions that reward API adoption.  
-- **Developer quests & milestone-based learning** — progress through levels based on API usage.  
+- **talent quests & milestone-based learning** — progress through levels based on API usage.  
 - **Community challenges** — peer-driven incentives for API adoption & collaboration.  
 
 ### Loyalty Campaigns
 
-- **Automated engagement campaigns** — target developers with personalized outreach.  
-- **Referral & advocacy programs** — reward developers for bringing in new users.  
-- **Loyalty emails & notifications** — keep developers engaged with updates & reward reminders.  
-- **API usage-based perks** — automatically unlock benefits as developers increase API calls.  
+- **Automated engagement campaigns** — target talents with personalized outreach.  
+- **Referral & advocacy programs** — reward talents for bringing in new users.  
+- **Loyalty emails & notifications** — keep talents engaged with updates & reward reminders.  
+- **API usage-based perks** — automatically unlock benefits as talents increase API calls.  
 
 
 ## Technologies
 
 - **TypeScript**: For robust type checking and cleaner codebase.
 - **React (Frontend)**: Modern frontend framework for a responsive and interactive user interface.
-- **Hosting**: The site is hosted on **AWS S3** with **CloudFront** for global content delivery.  
-- **Domain**: Managed via **Namecheap**.  
+Managed via **Namecheap**.  
 - **SSL Security**: Provided by **AWS Certificate Manager (ACM)** for secure connections.  
 
 
