@@ -1,9 +1,13 @@
 import { siteConfig } from "@/_data/site-config";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa6";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { MdEmail } from "react-icons/md";
+
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="font-sans grid grid-rows-[5px_1fr_20px] md:grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 sm:items-start">
         <Image
           className="dark:invert"
@@ -16,19 +20,23 @@ export default function Home() {
         <ol className="font-mono list-inside list-decimal text-sm/6 sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             We are here to help you learn and grow by{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.30] font-mono font-semibold px-2 py-0.5 rounded">
+            <code className="bg-black/[.05] dark:bg-white/[.30] font-mono font-semibold px-2 py-0.5 rounded">
               doing
             </code>
-            .
+             {" "}without any limits.
           </li>
 
           <li className="mb-2 tracking-[-.01em]">
             AI moves fast, We don&#39;t want you to be behind.
-            <span className="block px-6">We give you the tools, you do the building!</span>
+            <span className="md:block md:px-6">
+              We give you the tools, you do the building!
+            </span>
           </li>
           <li className="mb-2 tracking-[-.01em]">
-            Collaborate with software engineers, product managers, 
-            <span className="block px-6">product designers, data folks, and other lifelong learners.</span>
+            Collaborate with software engineers, product managers,
+            <span className="md:block md:px-6">
+              product designers, data folks, and other lifelong learners.
+            </span>
           </li>
           <li className="mb-2 tracking-[-.01em]">
             Build Open Source Softwares and AI/ML Products
@@ -49,13 +57,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
+            <FaArrowRight size={16} />
             Start Contributing
           </a>
           <a
@@ -75,13 +77,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
+         <LiaLinkedinIn size={16}/>
           Linkedin
         </a>
         <a
@@ -90,13 +86,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
+
           X <span className="line-through ">Twitter</span>
         </a>
         <a
@@ -105,13 +95,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
+          <MdEmail size={16}/>
           Propose an OSS Product →
         </a>
       </footer>
