@@ -2,18 +2,18 @@ import { InstagramIcon, LinkedInIcon, XIcon, YouTubeIcon } from "@/components/sh
 
 export const footerData = {
   brand: {
-    name: "Lagos Innovates",
-    bio: "Lagos Innovates is an initiative of the Lagos State Employment Trust Fund (LSETF).",
-    address: "Address: 16 Billings Way, Oregun, Ikeja Lagos, Nigeria",
+    name: "Ogbomoso Innovates",
+    bio: "Ogbomoso Innovates is an initiative of the Ogbomoso State Employment Trust Fund (LSETF).",
+    address: "Address: 16 Billings Way, Oregun, Ikeja Ogbomoso, Nigeria",
     telephone: "Telephone: +234 (0) 1 700 0945",
-    email: "Email: lagosinnovates@lsetf.ng",
+    email: "Email: Ogbomosoinnovates@lsetf.ng",
     buitBy: "Made with ❤️ by Damola",
     copyright: ". All rights reserved.",
-    ownedBy: "Lagos Innovates",
+    ownedBy: "Ogbomoso Innovates",
   },
   socialLinks: [
     {
-      href: "https://www.instagram.com/lagosinnovates",
+      href: "https://www.instagram.com/Ogbomosoinnovates",
       label: "Instagram",
       icon: InstagramIcon,
     },
@@ -23,12 +23,12 @@ export const footerData = {
       icon: YouTubeIcon,
     },
     {
-      href: "https://www.linkedin.com/company/lagos-innovates",
+      href: "https://www.linkedin.com/company/Ogbomoso-innovates",
       label: "LinkedIn",
       icon: LinkedInIcon,
     },
     {
-      href: "https://x.com/lagosinnovates",
+      href: "https://x.com/Ogbomosoinnovates",
       label: "X",
       icon: XIcon,
     },

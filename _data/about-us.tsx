@@ -1,5 +1,5 @@
 export const AboutUsData = {
-    heading: "We strengthen Lagos startup ecosystem",
+    heading: "We strengthen Ogbomoso startup ecosystem",
     subheading: "We support tech founders, and Startups by facilitating access to high-quality workspaces and infrastructure, learning, incubation, investor and peer networks.",
     image: {
       src: "/images/about.png",
