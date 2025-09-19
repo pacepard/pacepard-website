@@ -1,3 +1,4 @@
+import CommunitySection from "@/components/content-6";
 import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import FAQs from "@/components/sections/faq";
@@ -16,7 +17,9 @@ const HackOgbomoso =() =>{
        <MentorSection />
        <CallToAction />
        <FAQs/>
+       <CommunitySection/>
        <Footer/>
+
 
     </main>
   );

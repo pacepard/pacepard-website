@@ -13,6 +13,7 @@ const LogoContainer = ({
   return <div className={clsx(className, "h-48 w-48 pr-10")} {...props} />;
 }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const Logo = (data: ILogo) => {
   const { large, className, ...rest } = data;
   const { theme } = useTheme();

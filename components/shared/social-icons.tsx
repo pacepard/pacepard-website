@@ -1,6 +1,8 @@
 import React from "react";
 
 // Social Icon Components
+
+
 export function XIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
                <svg
@@ -9,6 +11,7 @@ export function XIcon(props: React.SVGProps<SVGSVGElement>) {
                   width="1em"
                   height="1em"
                   viewBox="0 0 24 24"
+                  {...props}
                 >
                   <path
                     fill="currentColor"
