@@ -19,6 +19,16 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Turn off <img> rule (useful if you intentionally use <img>)
+      "@next/next/no-img-element": "off",
+
+      // Ignore unused variables starting with underscore
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+      ],
+    },
   },
 ];
 
