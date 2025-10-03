@@ -1,5 +1,5 @@
 
-import { AboutUsData } from "@/_data/about-us";
+import { AboutUsData } from "@/_data/hack/about-us";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { ArrowUpRight } from "lucide-react";
