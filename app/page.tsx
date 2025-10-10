@@ -1,9 +1,9 @@
 import { Header } from "@/components/pacepard/containers/header";
-import AboutSection2 from "@/components/pacepard/sections/about";
+import AboutSection from "@/components/pacepard/sections/about";
 import CallToAction from "@/components/pacepard/sections/call-to-action";
 import Features from "@/components/pacepard/sections/features-4";
 import Footer from "@/components/pacepard/sections/footer";
-import HeroSection from "@/components/pacepard/sections/herosection";
+import HeroSection from "@/components/pacepard/sections/hero-section";
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <HeroSection/>
-      <AboutSection2/>
+      <AboutSection/>
       <Features/>
       <CallToAction/>
       <Footer/>

@@ -30,13 +30,13 @@ const transitionVariants = {
 
 export default function CallToAction() {
   return (
-    <section className="bg-gradient-to-b py-32 from-primary to-primary dark:from-primary-950 dark:to-background overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6 lg:flex lg:items-center lg:justify-between">
+    <section className="bg-primary py-32 from-primary to-primary dark:from-primary dark:to-background overflow-hidden">
+      <div className="mx-auto max-w-5xl px-4 lg:flex lg:items-center lg:justify-between">
         
         {/* Title/Text Section */}
         <div className="mb-8 lg:mb-0 lg:flex-1">
-          <h2 className="text-balance text-4xl font-semibold text-title lg:text-3xl">
-            Start Building
+          <h2 className="text-balance text-4xl font-semibold text-title lg:text-3xl text-accent">
+            Start Building, innovate wit your team and now internnaly
           </h2>
         </div>
 
@@ -61,9 +61,10 @@ export default function CallToAction() {
                     className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]"
                   >
                     <Button
+                    variant={"secondary"}
                       asChild
                       size="lg"
-                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
+                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 "
                     >
                       <a href={heroData.button1.href}>
                         <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
@@ -83,7 +84,7 @@ export default function CallToAction() {
                       asChild
                       size="lg"
                       variant="outline"
-                      className="bg-background relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
+                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-30"
                     >
                       <a href={heroData.button1.href}>
                         <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">

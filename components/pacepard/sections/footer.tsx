@@ -2,6 +2,7 @@ import { BRAND_INFO,
     SOCIAL_LINKS_DATA, 
     FOOTER_LINKS_DATA, 
     FOOTER_BOTTOM_TEXT  } from "@/_data/pacepard/footer";
+import { Logo } from "@/components/pacepard/containers/logo";
 import { GitHubIcon, LinkedInIcon, XIcon  } from "@/components/pacepard/containers/social-icons";
 
 // Map the string IDs from the data file to the actual imported icon components
@@ -22,14 +23,7 @@ export default function Footer() {
                     {/* Brand Section (Uses BRAND_INFO) */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            {/* Brand Initial */}
-                            <div 
-                                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                                style={{ backgroundColor: BRAND_INFO.initialBgColor }}
-                            >
-                                <span className="text-neutral-900 font-medium text-lg">{BRAND_INFO.initial}</span>
-                            </div>
-                            <span className="text-xl font-semibold text-white">{BRAND_INFO.name}</span>
+                            <Logo/>
                         </div>
                         
                         {/* Brand Description */}
@@ -47,7 +41,7 @@ export default function Footer() {
                                     <a
                                         key={social.id}
                                         href={social.href}
-                                        className="w-9 h-9 bg-neutral-800 dark:bg-neutral-500 hover:bg-[#a3f443] dark:hover:bg-[#a3f443] rounded-lg flex items-center justify-center transition-colors"
+                                        className="w-9 h-9 bg-accent dark:bg-accent hover:bg-primary dark:hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
                                         aria-label={social.ariaLabel}
                                     >
                                         <IconComponent className="w-4 h-4" />
@@ -61,7 +55,7 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row gap-10 lg:gap-24">
                         {FOOTER_LINKS_DATA.map((section, index) => (
                             <div key={index} className="space-y-4">
-                                <h3 className="text-white font-semibold">{section.title}</h3>
+                                <h3 className="font-semibold">{section.title}</h3>
                                 <ul className="space-y-3">
                                     {section.links.map((link, linkIndex) => (
                                         <li key={linkIndex}>
@@ -69,7 +63,7 @@ export default function Footer() {
                                                 href={link.href}
                                                 target={link.external ? "_blank" : "_self"}
                                                 rel={link.external ? "noopener noreferrer" : undefined}
-                                                className="text-sm text-neutral-400 hover:text-[#a3f443] transition-colors"
+                                                className="text-sm text-neutral-400 hover:text-primary transition-colors"
                                             >
                                                 {link.label}
                                             </a>
@@ -83,7 +77,7 @@ export default function Footer() {
 
                 {/* Pacepard Text */}
                 <div className="mt-16 flex justify-center ">
-                    <span className="text-[6.2rem] md:text-[12rem] lg:text-[18.5rem] font-bold select-none leading-none bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
+                    <span className="text-[6.2rem] md:text-[12rem] lg:text-[16.6rem] font-bold select-none leading-none bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
                         {BRAND_INFO.name}
                     </span>
                 </div>
@@ -99,7 +93,7 @@ export default function Footer() {
                         &copy; {currentYear}{" "}
                         <a
                             href={FOOTER_BOTTOM_TEXT.copyrightHref}
-                            className=" text-neutral-400 hover:text-[#a3f443] transition-colors"
+                            className=" text-neutral-400 hover:text-primary transition-colors"
                         >
                             {FOOTER_BOTTOM_TEXT.copyrightName}
                         </a>

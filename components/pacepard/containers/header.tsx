@@ -31,15 +31,15 @@ export const Header = () => {
           scrolled && "bg-background/50 backdrop-blur-3xl"
         )}
       >
-        <div className="mx-auto max-w-7xl items-center justify-center px-6 transition-all duration-300">
-          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+        <div className="mx-auto max-w-7xl items-center justify-center px-2 pr-4 transition-all duration-300">
+          <div className="relative flex flex-wrap items-center justify-between gap-6 py-2 lg:gap-0">
             <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
               <Link href="/" aria-label="home" className="flex">
                 <Logo />
               </Link>
 
               <div className="flex items-center space-x-2 lg:hidden">
-                <ThemeToggle className="relative z-20 block cursor-pointer " />
+                <ThemeToggle className="relative z-20 block cursor-pointer hover:bg-accent " />
 
                 <button
                   onClick={() => setMenuState(!menuState)}
@@ -57,7 +57,7 @@ export const Header = () => {
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="font-normal hover:text-brand block duration-150"
+                        className="font-normal hover:text-primary block duration-150"
                       >
                         <span>{item.label}</span>
                       </Link>
@@ -82,38 +82,38 @@ export const Header = () => {
                   ))}
                 </ul>
               </div>
-              <div className="w-full md:w-fit flex flex-col items-center justify-center space-y-3 sm:flex-row sm:gap-3 sm:space-y-0">
-                {/* The ThemeToggle is now treated as another item in the flex container */}
-                <ThemeToggle />
 
-                <Button
-                  asChild
-                  variant="link"
-                  size="sm"
-                  className={cn(scrolled && "lg:hidden")}
-                >
-                  <Link href="#">
-                    <span>Login</span>
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  className={cn(scrolled && "lg:hidden")}
-                >
-                  <Link href="#">
-                    <span>Register</span>
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  className={cn(scrolled ? "lg:inline-flex" : "hidden")}
-                >
-                  <Link href="#">
-                    <span>Host an Hackathon</span>
-                  </Link>
-                </Button>
+              <div className="flex w-full items-start sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                <div className="lg:flex relative z-20 cursor-pointer hidden">
+                  <ThemeToggle />
+                </div>
+
+                
+                {!scrolled && (
+                  <>
+                    <Button asChild variant="link" size="sm">
+                      <Link href="#">
+                        <span className="text-foreground hover:text-accent-foreground">
+                          Login
+                        </span>
+                      </Link>
+                    </Button>
+
+                    <Button asChild size="sm">
+                      <Link href="#">
+                        <span>Register</span>
+                      </Link>
+                    </Button>
+                  </>
+                )}
+
+                {scrolled && (
+                  <Button asChild size="sm">
+                    <Link href="#">
+                      <span>Host an Hackathon</span>
+                    </Link>
+                  </Button>
+                )}
               </div>
             </div>
           </div>

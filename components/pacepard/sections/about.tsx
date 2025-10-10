@@ -1,13 +1,10 @@
 "use client";
 
-// Adjusted import path for the UI component. Assuming it resides one level up in 'ui/timeline-animation'.
-// If 'ui' is a sibling directory to 'components', this path may need further adjustment.
-
 import { useRef } from "react";
 import { TimelineContent } from "@/components/ui/timeline-animation";
 import { ABOUT_SECTION_HEADLINE } from "@/_data/pacepard/about";
 
-export default function AboutSection2() {
+export default function AboutSection() {
     const heroRef = useRef<HTMLDivElement>(null);
 
     // Animation variants are structural/component logic, so they remain here.
@@ -43,7 +40,7 @@ export default function AboutSection2() {
     };
 
     return (
-        <section className="py-32 px-4 bg-[#00C950] mt-20 overflow-hidden ">
+        <section className="py-20 md:py-32 px-4 bg-secondary dark:bg-yellow-100 mt-20 overflow-hidden ">
             <div className="max-w-5xl mx-auto" ref={heroRef}>
                 <div className="flex flex-col lg:flex-row items-start gap-8">
                     {/* Right side - Content */}
@@ -54,7 +51,7 @@ export default function AboutSection2() {
                             animationNum={0}
                             timelineRef={heroRef}
                             customVariants={revealVariants}
-                            className="sm:text-4xl text-2xl md:text-5xl !leading-[110%] font-semibold text-gray-900 mb-8"
+                            className="text-4xl md:text-5xl !leading-[110%] font-semibold text-gray-900 mb-8"
                         >
                             {ABOUT_SECTION_HEADLINE.map((segment, index) => {
                                 // Determine which animation variants to use

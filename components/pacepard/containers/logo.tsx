@@ -44,7 +44,7 @@ const Logo = (data: ILogo) => {
         <Image
           src={imageSrc}
           alt="Damola Oladipo"
-          className="w-36"
+          className="w-26 dark:invert"
           width={100}
           height={100}
           priority
