@@ -12,7 +12,7 @@ const ThemeToggle = ({ className }: IToggle) => {
   const [mounted, setMounted] = useState(false);
   // We need resolvedTheme to know what icon to show (light or dark)
   // We need theme to know what the current setting is (light, dark, or system)
-  const { theme, resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -25,16 +25,17 @@ const ThemeToggle = ({ className }: IToggle) => {
 
   // --- Theme Cycling Logic ---
   let nextTheme: string;
-  let CurrentIcon;
-
-  // 1. Determine the icon based on the *resolved* theme
-  if (resolvedTheme === 'dark') {
-    CurrentIcon = Moon; // It's currently dark, show Moon
-  } else if (resolvedTheme === 'light') {
-    CurrentIcon = Sun; // It's currently light, show Sun
-  } else {
-    CurrentIcon = Monitor; // Fallback for system theme or undefined state
-  }
+  // let CurrentIcon;
+ 
+  // //es-lint-unused-chars-ignore
+  // // 1. Determine the icon based on the *resolved* theme
+  // if (resolvedTheme === 'dark') {
+  //   CurrentIcon = Moon; // It's currently dark, show Moon
+  // } else if (resolvedTheme === 'light') {
+  //   CurrentIcon = Sun; // It's currently light, show Sun
+  // } else {
+  //   CurrentIcon = Monitor; // Fallback for system theme or undefined state
+  // }
 
   // 2. Determine the *next* theme to set (cycle between system, light, dark)
   switch (theme) {

@@ -93,6 +93,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
           : text.split(splitBy);
     }, [text, splitBy]);
 
+    
     // Calculate stagger delays based on staggerFrom
     const getStaggerDelay = useCallback(
       (index: number) => {
@@ -120,6 +121,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
         }
         return Math.abs(staggerFrom - index) * staggerDuration;
       },
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       [elements.length, staggerFrom, staggerDuration],
     );
 
@@ -139,6 +141,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
       if (autoStart) {
         startAnimation();
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [autoStart]);
 
     const variants = {

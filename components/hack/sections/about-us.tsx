@@ -1,7 +1,6 @@
 import { AboutUsData } from "@/_data/hack/about-us";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutUs() {
