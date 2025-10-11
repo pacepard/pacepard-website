@@ -3,9 +3,10 @@ import AboutUs from "@/components/hack/sections/about-us";
 import CallToAction from "@/components/hack/sections/cta";
 import FAQs from "@/components/hack/sections/faq";
 import Footer from "@/components/pacepard/sections/footer";
-import HeroSection from "@/components/pacepard/sections/hero-section";
+import  HeroSection from "@/components/hack/sections/hero-section";
 import MentorSection from "@/components/hack/sections/mentors";
-import { Header } from "@/components/shared/header";
+import { Header } from "@/components/hack/containers/header";
+
 
 const HackOgbomoso = () => {
   return (

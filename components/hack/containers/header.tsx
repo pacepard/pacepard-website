@@ -1,15 +1,18 @@
 "use client";
+
+
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
-import { Navigation } from "@/_data/pacepard/navigation";
+import { Navigation } from "@/_data/hack/navigation";
 import ThemeToggle from "@/components/shared/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/pacepard/containers/logo";
+import { Logo } from "@/components/hack/containers/logo";
 
-export const PacepardHeader = () => {
+
+export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
 
@@ -27,8 +30,8 @@ export const PacepardHeader = () => {
       <nav
         data-state={menuState && "active"}
         className={cn(
-          "fixed z-20 w-full transition-colors duration-150",
-          scrolled && "bg-background/50 backdrop-blur-3xl"
+          "fixed z-20 w-full bg-background transition-colors duration-150",
+          scrolled && "bg-background backdrop-blur-3xl"
         )}
       >
         <div className="mx-auto max-w-7xl items-center justify-center px-4 transition-all duration-300">
@@ -91,15 +94,15 @@ export const PacepardHeader = () => {
                 
                 {!scrolled && (
                   <>
-                    <Button asChild variant="link" size="sm">
+                    <Button asChild variant="link" size="sm" className=" rounded-md border-brand bg-background dark:bg-white text-black">
                       <Link href="#">
-                        <span className="text-foreground hover:text-accent-foreground">
+                        <span className="">
                           Login
                         </span>
                       </Link>
                     </Button>
 
-                    <Button asChild size="sm">
+                    <Button asChild size="sm" className="rounded-md px-5 text-black bg-brand hover:bg-brand/90">
                       <Link href="#">
                         <span>Register</span>
                       </Link>
@@ -108,9 +111,9 @@ export const PacepardHeader = () => {
                 )}
 
                 {scrolled && (
-                  <Button asChild size="sm">
+                  <Button asChild size="sm" className="rounded-md px-5 text-black bg-brand hover:bg-brand/90">
                     <Link href="#">
-                      <span>Host an Hackathon</span>
+                      <span>Share Hackathon</span>
                     </Link>
                   </Button>
                 )}

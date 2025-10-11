@@ -1,4 +1,4 @@
-import { Header } from "@/components/pacepard/containers/header";
+import { PacepardHeader } from "@/components/pacepard/containers/header";
 import AboutSection from "@/components/pacepard/sections/about";
 import CallToAction from "@/components/pacepard/sections/call-to-action";
 import Features from "@/components/pacepard/sections/features-4";
@@ -10,7 +10,7 @@ export default function Home() {
   return (
 
     <>
-      <Header />
+      <PacepardHeader />
       <HeroSection/>
       <AboutSection/>
       <Features/>

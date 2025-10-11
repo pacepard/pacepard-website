@@ -1,9 +1,8 @@
-
 import { AboutUsData } from "@/_data/hack/about-us";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { ArrowUpRight } from "lucide-react";
-
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -50,18 +49,11 @@ export default function AboutUs() {
                 <Button
                   asChild
                   size="lg"
-                  variant={AboutUsData.button.variant}
-                  className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
+                  className="rounded-md px-5 text-black bg-brand hover:bg-brand/90"
                 >
-                  <a href={AboutUsData.button.href}>
-                    <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
-                      {AboutUsData.button.text}
-                      <ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
-                    </span>
-                    <div
-                      className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"
-                    ></div>
-                  </a>
+                  <Link href="#link">
+                    <span className="text-nowrap">About Ennovate Lab</span>
+                  </Link>
                 </Button>
               </div>
             </div>
