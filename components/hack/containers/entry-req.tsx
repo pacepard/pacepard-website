@@ -61,9 +61,10 @@ export default function EntryRequirements() {
               <item.icon size={14} className="text-black" />
             </TimelineIndicator>
           </TimelineHeader>
-          <TimelineDate className="mt-2 mb-0">{item.date}</TimelineDate>
+          
           <TimelineContent>
             {item.description}
+            <TimelineDate className="mt-2 mb-0">{item.date}</TimelineDate>
           </TimelineContent>
         </TimelineItem>
       ))}

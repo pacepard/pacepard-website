@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Location() {
   return (
-    <section className="bg-amber-100 dark:bg-neutral-950 py-20 px-6 md:px-16">
+    <section className="bg-amber-100 dark:bg-neutral-900 py-20 px-6 md:px-16">
       <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-20">
         
         {/* Left Section — Text + Button */}

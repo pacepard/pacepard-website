@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.getStartedUrl),
   keywords: [
     "Pacepard",
+    "Hackathon",
+    "Product Designer",
+    "Youtube",
     "Product Management",
     "Software Engineering",
     "Data Science",

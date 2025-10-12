@@ -56,7 +56,7 @@ export default function FAQ() {
                                 Can&#39;t find what you&#39;re looking for? Contact our{' '}
                                 <Link
                                     href="#"
-                                    className="text-brand font-medium hover:underline">
+                                    className="text-black dark:text-brand font-medium hover:underline">
                                     customer support team
                                 </Link>
                             </p>

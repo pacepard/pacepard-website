@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Pacepard - learn and grow by doing",
   title: "Pacepard",
   url: "https://www.pacepard.com",
-  getStartedUrl: "https://www.pacepard.com/login",
+  getStartedUrl: "https://www.app.pacepard.com/login",
   ogImage: "/blocks/og-image.png",
   products: {
     name: "lens",

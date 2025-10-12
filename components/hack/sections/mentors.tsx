@@ -4,7 +4,7 @@ const MentorSection = () =>{
         <section className="py-16 pt-20 md:py-32 dark:bg-[#171717]">
             <div className="mx-auto max-w-5xl px-6">
                 
-                <div className="mt-24 gap-4 sm:grid sm:grid-cols-2">
+                <div className="mt-16 gap-4 sm:grid sm:grid-cols-2">
                     <div className="sm:w-2/5">
                         <h2 className="text-title text-3xl font-bold sm:text-4xl">Mentors</h2>
                     </div>
