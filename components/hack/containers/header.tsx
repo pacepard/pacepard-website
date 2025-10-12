@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/hack/containers/logo";
 
 
-export const Header = () => {
+const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
 
@@ -125,3 +125,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header

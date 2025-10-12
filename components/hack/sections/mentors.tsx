@@ -1,7 +1,7 @@
 
 const MentorSection = () =>{
     return (
-        <section className="py-32">
+        <section className="py-16 pt-20 md:py-32 dark:bg-[#171717]">
             <div className="mx-auto max-w-5xl px-6">
                 
                 <div className="mt-24 gap-4 sm:grid sm:grid-cols-2">

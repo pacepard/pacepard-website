@@ -48,7 +48,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
 
             <div className="mx-auto max-w-5xl px-3 lg:px-6 ">
-              <div className="sm:mx-auto lg:mt-8 lg:mr-auto text-left items-start mt-8">
+              <div className="sm:mx-auto lg:mt-8 lg:mr-auto text-left items-center mt-8">
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#link"
@@ -76,7 +76,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-4 max-w-2xl text-5xl font-medium text-left md:text-6xl"
+                  className="mt-4 max-w-3xl text-4xl font-medium text-left md:text-7xl"
                 >
                   {heroData.heading}
                 </TextEffect>
@@ -86,7 +86,7 @@ export default function HeroSection() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="mt-8 max-w-2xl text-lg text-pretty"
+                  className="mt-8 max-w-2xl text-lg text-balance"
                 >
                   {heroData.subheading}
                 </TextEffect>

@@ -1,20 +1,37 @@
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function CallToAction(){
     return (
-        <section className="py-32">
-            <div className="mx-auto max-w-5xl px-6 rounded-[2rem] border py-16">
+        <section className="bg-black text-white py-20">
+            <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center">
                     <h2 className="text-title text-balance text-4xl font-semibold lg:text-5xl">Start Building</h2>
                     <p className="text-body mt-4">Libero sapiente aliquam quibusdam aspernatur.</p>
 
-                    <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <Link href="/" className="btn variant-primary sz-lg">
-                            <span>Get Started</span>
-                        </Link>
-                        <Link href="/" className="btn variant-outlined sz-lg">
-                            <span>Book Demo</span>
-                        </Link>
+                    <div className="mt-8 flex flex-wrap justify-center gap-4">
+                         <div
+                            key={1}
+                            className=" rounded-md p-0.5">
+                            <Button
+                                asChild
+                                size="lg"
+                                className="rounded-md px-5 text-black bg-brand hover:bg-brand/90">
+                                <Link href={"/"}>
+                                    <span className="text-nowrap">{"button"}</span>
+                                </Link>
+                            </Button>
+                        </div>
+                        <Button
+                            key={2}
+                            asChild
+                            size="lg"
+                            variant="outline"
+                            className="h-10.5 rounded-md px-5 border-brand bg-background dark:bg-white text-black">
+                            <Link href="#link">
+                                <span className="text-nowrap">Become a mentor</span>
+                            </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

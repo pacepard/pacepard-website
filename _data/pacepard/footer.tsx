@@ -2,7 +2,7 @@ export const BRAND_INFO = {
     name: "Pacepard",
     initial: "d",
     initialBgColor: "#a3f443",
-    description: "Damola is product and design engineer from Nigeria. I design and build beautiful, intuitive, and responsive web and mobile applications. Let’s work together.",
+    description: "Pacepard is a developer engagement platform built for the next decade of African innovation.",
 };
 
 // Data structure for social media links

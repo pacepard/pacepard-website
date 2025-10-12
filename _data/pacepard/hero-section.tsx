@@ -1,8 +1,8 @@
 export const heroData = {
   heading: "Innovate with the Open Source Talent Engine.",
-  badge: "Join #HackOgbomoso",
+  badge: "The Open Source Talent Engine",
   subheading:
-    "We are a hub for entrepreneurship, mentorship, and impact-driven projects—building bold ideas and transforming communities.",
+    "Where organizations and talents come together to unlock innovation, skill mastery, competence and loyalty - one hackathon at a time.",
 
   mockup: {
     light: {

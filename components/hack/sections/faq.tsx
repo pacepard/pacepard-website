@@ -46,7 +46,7 @@ export default function FAQ() {
     ]
 
     return (
-        <section className="bg-muted dark:bg-background py-20">
+        <section className="bg-amber-100 py-16 pt-20 md:py-32 dark:bg-[#171717]">
             <div className="mx-auto max-w-5xl px-4 md:px-6">
                 <div className="flex flex-col gap-10 md:flex-row md:gap-16">
                     <div className="md:w-1/3">
@@ -56,7 +56,7 @@ export default function FAQ() {
                                 Can&#39;t find what you&#39;re looking for? Contact our{' '}
                                 <Link
                                     href="#"
-                                    className="text-primary font-medium hover:underline">
+                                    className="text-brand font-medium hover:underline">
                                     customer support team
                                 </Link>
                             </p>

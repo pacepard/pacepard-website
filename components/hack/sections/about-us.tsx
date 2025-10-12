@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function AboutUs() {
   return (
-    <section className="bg-white py-16 pt-20 md:py-32 dark:bg-[#171717]">
+    <section className="bg-[#171717] text-white py-16 pt-20 md:py-32 dark:bg-[#171717]">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <img
           className="rounded-(--radius) grayscale"
