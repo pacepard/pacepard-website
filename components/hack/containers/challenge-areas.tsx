@@ -1,9 +1,9 @@
-import { GitCompare, GitFork, GitMerge, GitPullRequest } from "lucide-react";
+import { Brain, Globe2, HeartHandshake } from "lucide-react";
 
 import {
   Timeline,
   TimelineContent,
-  TimelineDate,
+  
   TimelineHeader,
   TimelineIndicator,
   TimelineItem,
@@ -12,41 +12,39 @@ import {
 } from "@/components/ui/timeline";
 
 const items = [
+ 
   {
     id: 1,
-    date: "15 minutes ago",
-    title: "Forked Repository",
+
+    title: "People on the Move:",
     description:
-      "Forked the repository to create a new branch for development.",
-    icon: GitFork,
+      "Submitted PR #342 with new feature implementation. Waiting for code review from team leads.",
+    icon: Globe2,
   },
   {
     id: 2,
-    date: "10 minutes ago",
-    title: "Pull Request Submitted",
+    
+    title: "Discipleship in a Digital Age:",
     description:
-      "Submitted PR #342 with new feature implementation. Waiting for code review from team leads.",
-    icon: GitPullRequest,
+      "Received comments on PR. Minor adjustments needed in error handling and documentation.",
+    icon: Brain,
   },
   {
     id: 3,
-    date: "5 minutes ago",
-    title: "Comparing Branches",
-    description:
-      "Received comments on PR. Minor adjustments needed in error handling and documentation.",
-    icon: GitCompare,
-  },
-  {
-    id: 4,
-    title: "Merged Branch",
+    title: "Least Reached People",
     description:
       "Merged the feature branch into the main branch. Ready for deployment.",
-    icon: GitMerge,
+    icon: HeartHandshake,
   },
 ];
 
 export default function ChallengeAreas() {
   return (
+    <>
+    
+       <h4 className="text-1xl md:text-[20px] pb-8">
+            We are calling solutions around:
+          </h4>
     <Timeline defaultValue={3}>
       {items.map((item) => (
         <TimelineItem
@@ -61,10 +59,16 @@ export default function ChallengeAreas() {
               <item.icon size={14} className="text-black" />
             </TimelineIndicator>
           </TimelineHeader>
-          <TimelineDate className="mt-2 mb-0">{item.date}</TimelineDate>
+          
           <TimelineContent>{item.description}</TimelineContent>
         </TimelineItem>
       ))}
     </Timeline>
+
+      <h4 className="text-1xl md:text-[18px] pt-8">
+            These and more are the key areas around which the #HACK2025 solutions will be built. 
+          </h4>
+
+    </>
   );
 }

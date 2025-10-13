@@ -1,8 +1,8 @@
 export const heroData = {
-  heading: "Innovate with the Open Source Talent Engine.",
+  heading: "The reliable way to unlock innovation, skill mastery and adoption",
   badge: "The Open Source Talent Engine",
   subheading:
-    "Where organizations and talents come together to unlock innovation, skill mastery, competence and loyalty - one hackathon at a time.",
+    "Pacepard is where organizations and African talents come together to invent the future, learn by doing, earn rewards, and unlock long-term loyalty",
 
   mockup: {
     light: {
@@ -22,13 +22,13 @@ export const heroData = {
   button1: {
     id: "01",
     href: "/programs",
-    text: "Host an Hackathon",
+    text: "Organize your Hackathon",
     variant: "default" as const,
   },
   button2: {
     id: "02",
     href: "/about",
-    text: "Learn More",
+    text: "Request a Demo",
     variant: "glow" as const,
     icon: "Arrow",
   },

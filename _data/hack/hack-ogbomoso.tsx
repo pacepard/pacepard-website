@@ -1,7 +1,7 @@
 export const HackHeroData = {
-  heading: "Innovation for Kingdom Impact",
+  heading: "Got Bold Ideas + Big Faith?",
   tagline:
-    " Go ye into Ogbomoso, and preach the gospel to the unreached and unsaved",
+    "Team up with other Christian creatives, enablers, and techies to dream, build, and launch solutions that advance the gospel and bless humanity. ",
   date: "Thur Oct 23rd - Sat Oct 25th 2025",
   pitch:
     "Got bold ideas and a big faith? Team up with other Christian creatives, solution-enablers, and techies to dream, build, and launch solutions that make a difference in your world.",

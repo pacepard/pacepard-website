@@ -4,7 +4,7 @@ export type VenueItem = {
   id: string;
   icon: IconName;
   label: string;
-  sublabel: string;
+  sublabel?: string;
   description: string;
 };
 
@@ -12,23 +12,23 @@ export const venueItems: VenueItem[] = [
   {
     id: "venue",
     label: "Venue",
-    sublabel: "Location",
-    description: "The physical location of the hackathon.",
+    
+    description: "The Assembly by Ennovate Lab, beside BON Nest Hotel, along LAUTECH Main Gate, Ogbomoso, Oyo State",
     icon: "map-pin",
   },
   {
     id: "date",
-    label: "Date & Time",
-    sublabel: "Schedule",
-    description: "Event starts on November 2nd, 2025, 9:00 AM.",
+    label: "Date",
+    //sublabel: "Schedule",
+    description: "23rd – 25th October, 2025",
     icon: "calendar",
   },
   
   {
     id: "time",
-    label: "Date & Time",
-    sublabel: "Schedule",
-    description: "Event starts on November 2nd, 2025, 9:00 AM.",
-    icon: "calendar",
+    label: "Time",
+    
+    description: "09:00 AM daily",
+    icon: "clock",
   },
 ];

@@ -1,9 +1,8 @@
-import { GitCompare, GitFork, GitMerge, GitPullRequest } from "lucide-react"
+import { HeartHandshake, Sparkles, Target, Users } from "lucide-react"
 
 import {
   Timeline,
   TimelineContent,
-  TimelineDate,
   TimelineHeader,
   TimelineIndicator,
   TimelineItem,
@@ -15,38 +14,43 @@ const items = [
   {
     id: 1,
     date: "15 minutes ago",
-    title: "Forked Repository",
+    title: "A Passion to Create",
     description:
-      "Forked the repository to create a new branch for development.",
-    icon: GitFork,
+      "Whether you’re into design, storytelling, strategy, or tech, come ready to use your gifts for good.",
+    icon: Sparkles,
   },
   {
     id: 2,
     date: "10 minutes ago",
-    title: "Pull Request Submitted",
+    title: "A Heart for Impact",
     description:
-      "Submitted PR #342 with new feature implementation. Waiting for code review from team leads.",
-    icon: GitPullRequest,
+      "You believe innovation can be a tool for the Gospel and want to make a difference where it matters most.",
+    icon: HeartHandshake,
   },
   {
     id: 3,
     date: "5 minutes ago",
-    title: "Comparing Branches",
-    description:
-      "Received comments on PR. Minor adjustments needed in error handling and documentation.",
-    icon: GitCompare,
+    title: "A Willingness to Collaborate",
+    description: "#HACK is all about teamwork. Bring your ideas, energy, and openness to learn.",
+    icon: Users,
   },
   {
     id: 4,
-    title: "Merged Branch",
+    title: "Faith in Action",
     description:
-      "Merged the feature branch into the main branch. Ready for deployment.",
-    icon: GitMerge,
+      "This is for Christians who want to use their skills to serve people and transform communities.",
+    icon: Target,
   },
 ]
 
 export default function EntryRequirements() {
   return (
+    <>
+
+       <h4 className="text-1xl md:text-[20px] pb-8">
+            Joining #HACK2025 is simple; all you need is:
+          </h4>
+
     <Timeline defaultValue={3}>
       {items.map((item) => (
         <TimelineItem
@@ -64,10 +68,11 @@ export default function EntryRequirements() {
           
           <TimelineContent>
             {item.description}
-            <TimelineDate className="mt-2 mb-0">{item.date}</TimelineDate>
+            
           </TimelineContent>
         </TimelineItem>
       ))}
     </Timeline>
+    </>
   )
 }

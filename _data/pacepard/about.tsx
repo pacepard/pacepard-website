@@ -17,31 +17,31 @@ export const ABOUT_SECTION_HEADLINE: TextSegment[] = [
         animationNum: 0,
     },
     {
-        text: "rethinking",
+        text: "providing",
         as: "span",
         animationNum: 1,
         isHighlighted: true,
         className: "text-blue-600 border-2 border-blue-500 inline-block xl:h-16 border-dotted px-2 rounded-md",
     },
     {
-        text: " vehicle charging to be more reliable and always you-first. Our goal is to continually raise the bar and ",
+        text: " the smartest way to crowd source problem solving. We are helping companies build developer relations, drive product adoption and ",
         as: "span",
         animationNum: 0, // Continues main block animation
     },
     {
-        text: "challenge",
+        text: "long-term loyalty.",
         as: "span",
         animationNum: 2,
         isHighlighted: true,
         className: "text-orange-600 border-2 border-orange-500 inline-block xl:h-16 border-dotted px-2 rounded-md",
     },
     {
-        text: " how things could ",
+        text: " We are helping developers unlock skill mastery and ",
         as: "span",
         animationNum: 0, // Continues main block animation
     },
     {
-        text: "work for you.",
+        text: "earn rewards.",
         as: "span",
         animationNum: 3,
         isHighlighted: true,

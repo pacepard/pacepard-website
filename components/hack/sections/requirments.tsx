@@ -13,6 +13,8 @@ const Requirements = () => {
           <h2 className="text-2xl md:text-3xl font-semibold">
             Entry Requirements
           </h2>
+          
+         
           <div className="bg-white/10 rounded-2xl p-6 md:p-10 backdrop-blur-md shadow-sm">
             <EntryRequirements />
           </div>
@@ -21,7 +23,7 @@ const Requirements = () => {
         {/* Challenge Areas */}
         <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-semibold">
-            Challenge Areas
+            #HACK2025 Global Challenges
           </h2>
           <div className="bg-white/10 rounded-2xl p-6 md:p-10 backdrop-blur-md shadow-sm">
             <ChallengeAreas />

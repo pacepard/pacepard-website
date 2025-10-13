@@ -23,6 +23,7 @@ const HackOgbomoso = () => {
         <MentorSection />
         <CallToAction />
         <FAQs />
+        <Location />
         <CommunitySection />
         <Footer />
         

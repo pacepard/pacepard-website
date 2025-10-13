@@ -50,8 +50,8 @@ export default function AboutUs() {
                   size="lg"
                   className="rounded-md px-5 text-black bg-brand hover:bg-brand/90"
                 >
-                  <Link href="#link">
-                    <span className="text-nowrap">About Ennovate Lab</span>
+                  <Link href={AboutUsData.button.href}>
+                    <span className="text-nowrap">{AboutUsData.button.text}</span>
                   </Link>
                 </Button>
               </div>

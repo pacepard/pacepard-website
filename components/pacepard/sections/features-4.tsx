@@ -20,7 +20,7 @@ export default function Features() {
         <section className="py-12 md:py-20 px-4">
             <div className="mx-auto max-w-5xl space-y-8 md:space-y-16">
 
-                {/* Header Section (uses FEATURES_HEADER) */}
+                  {/* Header Section (uses FEATURES_HEADER) */}
                 <div className="grid gap-6 md:grid-cols-2 md:gap-12">
                     <h2 className="text-4xl font-medium">{header.title}</h2>
                     <div className="space-y-6">

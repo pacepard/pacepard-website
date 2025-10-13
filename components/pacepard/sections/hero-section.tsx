@@ -76,7 +76,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-4 max-w-3xl text-4xl font-medium text-left md:text-7xl"
+                  className="mt-4 max-w-[700px] text-4xl font-medium text-left md:text-[60px]"
                 >
                   {heroData.heading}
                 </TextEffect>

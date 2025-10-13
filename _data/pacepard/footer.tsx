@@ -27,45 +27,40 @@ export const SOCIAL_LINKS_DATA = [
 // Data structure for the main footer link columns
 export const FOOTER_LINKS_DATA = [
     {
-        title: "Madebydamola",
+        title: "Product",
         links: [
             {
-                label: "View my resume",
-                href: "./damola-resume.pdf",
+                label: "Organize your hackathon",
+                href: "#",
                 external: true, // Flag for target="_blank" and rel="noopener noreferrer"
             },
             {
-                label: "My playground",
-                href: "#playground",
+                label: "Browse Hackathons",
+                href: "#",
                 external: false,
             },
-            {
-                label: "My studio",
-                href: "#playground",
+             {
+                label: "Roadmap",
+                href: "#",
                 external: false,
             },
         ],
     },
     {
-        title: "Coming soon!",
+        title: "Company",
         links: [
             {
-                label: "Articles",
+                label: "About us",
                 href: "#",
                 external: false,
             },
             {
-                label: "Online classes",
+                label: "Changelog",
                 href: "#",
                 external: false,
             },
             {
-                label: "Speaking",
-                href: "#",
-                external: false,
-            },
-            {
-                label: "Newsletter",
+                label: "Contact Sales",
                 href: "#",
                 external: false,
             },
@@ -76,6 +71,6 @@ export const FOOTER_LINKS_DATA = [
 export const FOOTER_BOTTOM_TEXT = {
     madeBy: "Made with ❤️ from Ogbomoso, Nigeria",
     copyrightName: "Pacepard",
-    copyrightHref: "https://github.com/pacepard",
+    copyrightHref: "https://pacepard.com",
     rights: ". All rights reserved."
 };
