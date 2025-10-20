@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function CommunitySection() {
     return (
-        <section className="py-16 md:py-32">
+        <section className="py-16 md:py-32 bg-amber-100/50 dark:bg-neutral-900/50">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold">

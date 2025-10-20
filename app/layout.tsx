@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/_data/site-config";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { AppThemeProvider } from "@/context/theme-provider";
+import { useFont } from "@/_data/fonts";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -21,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.getStartedUrl),
   keywords: [
     "Pacepard",
+    "Hackathon",
+    "Product Designer",
+    "Youtube",
     "Product Management",
     "Software Engineering",
     "Data Science",
@@ -68,14 +63,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${useFont.variable} antialiased`}
       >
+
+        <AppThemeProvider>
         
-        {children}
+            {children}
+
+        </AppThemeProvider>
+        
         <Analytics/>
         <SpeedInsights/>
+
       </body>
     </html>
   );

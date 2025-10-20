@@ -1,13 +1,26 @@
-import { siteConfig } from "@/_data/site-config";
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa6";
-import { LiaLinkedinIn } from "react-icons/lia";
-import { MdEmail } from "react-icons/md";
+import { PacepardHeader } from "@/components/pacepard/containers/header";
+import AboutSection from "@/components/pacepard/sections/about";
+import CallToAction from "@/components/pacepard/sections/call-to-action";
+import Features from "@/components/pacepard/sections/features-4";
+import Footer from "@/components/pacepard/sections/footer";
+import HeroSection from "@/components/pacepard/sections/hero-section";
 
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[5px_1fr_20px] md:grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+
+    <>
+      <PacepardHeader />
+      <HeroSection/>
+      <AboutSection/>
+      <Features/>
+      <CallToAction/>
+      <Footer/>
+    </>
+  );
+}
+
+  {/* <div className="font-sans grid grid-rows-[5px_1fr_20px] md:grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 sm:items-start">
         <Image
           className="dark:invert"
@@ -99,6 +112,4 @@ export default function Home() {
           Propose an OSS Product →
         </a>
       </footer>
-    </div>
-  );
-}
+    </div> */}
