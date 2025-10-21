@@ -1,84 +1,124 @@
-import { ChevronRight } from "lucide-react"
-import Link from "next/link"
+"use client";
+
+import Image from "next/image";
+
+const partners = [
+    { name: "Elab", logo: "/hack-ogbomoso/elab logo.jpeg" },
+    { name: "The Assembly", logo: "/hack-ogbomoso/Theassembly logo.jpg" },
+    { name: "Brave Redemptive", logo: "/hack-ogbomoso/braveredemptive_logo.jpeg" },
+    { name: "Qeola", logo: "/hack-ogbomoso/qeola logo.png" },
+    { name: "L'orbe", logo: "/hack-ogbomoso/Lorbe logo.jpeg" },
+];
 
 const Partners = () => {
-
     return (
-                        
         <section className="bg-amber-100/50 dark:bg-background pb-16 pt-16 md:pb-32">
-            <div className="group relative m-auto max-w-6xl px-6">
-                <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-                    <Link
-                        href="/"
-                        className="block text-sm duration-150 hover:opacity-75">
-                        <span>Our Partners</span>
-
-                        <ChevronRight className="ml-1 inline-block size-3" />
-                    </Link>
+            <div className="relative m-auto max-w-6xl px-6">
+                {/* Heading */}
+                <div className="gap-4 sm:grid sm:grid-cols-2">
+                    <div className="sm:w-2/5">
+                        <h2 className="text-title text-3xl font-bold sm:text-4xl">
+                            Our Partners
+                        </h2>
+                    </div>
+                    <div className="mt-6 sm:mt-0">
+                        <p>
+                            Proud to collaborate with these amazing organizations supporting #HACK2025
+                        </p>
+                    </div>
                 </div>
 
-                <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-6xl grid-cols-3 md:grid-cols-6 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-5 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                            alt="Nvidia Logo"
-                            height="20"
-                            width="auto"
-                        />
-                    </div>
+                {/* Partners Infinite Scroll */}
+                <div className="relative mt-12 overflow-hidden">
+                    {/* Gradient edges */}
+                    <div className="pointer-events-none absolute bottom-0 left-0 top-0 z-10 w-20 bg-gradient-to-r from-amber-100/50 dark:from-background to-transparent" />
+                    <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-10 w-20 bg-gradient-to-l from-amber-100/50 dark:from-background to-transparent" />
 
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-4 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/column.svg"
-                            alt="Column Logo"
-                            height="16"
-                            width="auto"
-                        />
-                    </div>
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-4 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/github.svg"
-                            alt="GitHub Logo"
-                            height="16"
-                            width="auto"
-                        />
-                    </div>
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-5 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/nike.svg"
-                            alt="Nike Logo"
-                            height="20"
-                            width="auto"
-                        />
-                    </div>
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-5 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                            alt="Lemon Squeezy Logo"
-                            height="20"
-                            width="auto"
-                        />
-                    </div>
-                    <div className="flex">
-                        <img
-                            className="mx-auto h-4 w-fit dark:invert"
-                            src="https://html.tailus.io/blocks/customers/laravel.svg"
-                            alt="Laravel Logo"
-                            height="16"
-                            width="auto"
-                        />
-                    </div>                    
-                </div> 
+                    {/* Scrolling wrapper - duplicated 3 times for seamless loop */}
+                    <div className="flex animate-infinite-scroll">
+                        {/* Set 1 */}
+                        {partners.map((partner, index) => (
+                            <div
+                                key={`set1-${index}`}
+                                className="mx-8 flex flex-shrink-0 flex-col items-center justify-center gap-4 sm:mx-12"
+                            >
+                                <div className="flex h-20 w-20 items-center justify-center sm:h-24 sm:w-24">
+                                    <Image
+                                        src={partner.logo}
+                                        alt={`${partner.name} Logo`}
+                                        width={96}
+                                        height={96}
+                                        className="h-full w-full object-contain"
+                                    />
+                                </div>
+                                <p className="text-center text-xs font-medium sm:text-sm">
+                                    {partner.name}
+                                </p>
+                            </div>
+                        ))}
 
+                        {/* Set 2 - duplicate for seamless loop */}
+                        {partners.map((partner, index) => (
+                            <div
+                                key={`set2-${index}`}
+                                className="mx-8 flex flex-shrink-0 flex-col items-center justify-center gap-4 sm:mx-12"
+                            >
+                                <div className="flex h-20 w-20 items-center justify-center sm:h-24 sm:w-24">
+                                    <Image
+                                        src={partner.logo}
+                                        alt={`${partner.name} Logo`}
+                                        width={96}
+                                        height={96}
+                                        className="h-full w-full object-contain"
+                                    />
+                                </div>
+                                <p className="text-center text-xs font-medium sm:text-sm">
+                                    {partner.name}
+                                </p>
+                            </div>
+                        ))}
+
+                        {/* Set 3 - extra duplicate for even smoother transition */}
+                        {partners.map((partner, index) => (
+                            <div
+                                key={`set3-${index}`}
+                                className="mx-8 flex flex-shrink-0 flex-col items-center justify-center gap-4 sm:mx-12"
+                            >
+                                <div className="flex h-20 w-20 items-center justify-center sm:h-24 sm:w-24">
+                                    <Image
+                                        src={partner.logo}
+                                        alt={`${partner.name} Logo`}
+                                        width={96}
+                                        height={96}
+                                        className="h-full w-full object-contain"
+                                    />
+                                </div>
+                                <p className="text-center text-xs font-medium sm:text-sm">
+                                    {partner.name}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
+
+            <style jsx>{`
+                @keyframes infinite-scroll {
+                    from {
+                        transform: translateX(0);
+                    }
+                    to {
+                        transform: translateX(calc(-100% / 3));
+                    }
+                }
+
+                .animate-infinite-scroll {
+                    animation: infinite-scroll 30s linear infinite;
+                    width: max-content;
+                }
+            `}</style>
         </section>
+    );
+};
 
-    )
-}
-
-export default Partners
+export default Partners;
