@@ -3,7 +3,7 @@
 
 ## Pacepard (website)
 
-### Helping African talents learn and grow by doing..
+### Helping African talents unlock their superhuman potential.
 
 > Pacepard is a reward and engagement software for talents and product teams.  We support the development of Open Source Software that solves problems faced daily by Africans, and we are creating points of entry into machine learning research.
 

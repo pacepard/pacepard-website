@@ -10,7 +10,7 @@ export const siteConfig = {
     docs: "https://github.com/pacepard"
   },
   description:
-    "Pacepard helps African tech talents learn and grow by doing. We support the development of Open Source Software that solves problems faced daily by Africans, and we are creating points of entry into machine learning research.",
+    "Pacepard helps African tech talents unlock their superhuman potential. We support the development of Open Source Software that solves problems faced daily by Africans, and we are creating points of entry into machine learning research.",
   links: {
     creator: "@pacepard",
     twitter: "https://x.com/pacepard",

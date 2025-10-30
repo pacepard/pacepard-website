@@ -97,7 +97,7 @@ export const PacepardHeader = () => {
                       <Button
                         asChild
                         key={btn.id}
-                        variant={btn.variant as any}
+                        variant={btn.variant as "link" | "default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined}
                         size="sm"
                       >
                         <Link href={btn.href}>{btn.text}</Link>
@@ -107,7 +107,7 @@ export const PacepardHeader = () => {
                       <Button
                         asChild
                         key={btn.id}
-                        variant={btn.variant as any}
+                        variant={btn.variant as "link" | "default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined}
                         size="sm"
                       >
                         <Link href={btn.href}>{btn.text}</Link>
