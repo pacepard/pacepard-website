@@ -4,10 +4,11 @@ import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
-import { Navigation } from "@/_data/pacepard/navigation";
 import ThemeToggle from "@/components/shared/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/pacepard/containers/logo";
+import { navigationData } from "@/_data/pacepard/navigation";
+
 
 export const PacepardHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
@@ -40,10 +41,9 @@ export const PacepardHeader = () => {
 
               <div className="flex items-center space-x-2 lg:hidden">
                 <ThemeToggle className="relative z-20 block cursor-pointer hover:bg-accent " />
-
                 <button
                   onClick={() => setMenuState(!menuState)}
-                  aria-label={menuState == true ? "Close Menu" : "Open Menu"}
+                  aria-label={menuState ? "Close Menu" : "Open Menu"}
                   className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
                 >
                   <Menu className="m-auto size-8 duration-200 in-data-[state=active]:scale-0 in-data-[state=active]:rotate-180 in-data-[state=active]:opacity-0" />
@@ -51,15 +51,16 @@ export const PacepardHeader = () => {
                 </button>
               </div>
 
+              {/* Desktop navigation */}
               <div className="hidden lg:block">
                 <ul className="flex gap-4 text-sm">
-                  {Navigation.map((item, index) => (
-                    <li key={index}>
+                  {navigationData.links.map((item) => (
+                    <li key={item.id}>
                       <Link
                         href={item.href}
                         className="font-normal hover:text-primary block duration-150"
                       >
-                        <span>{item.label}</span>
+                        {item.label}
                       </Link>
                     </li>
                   ))}
@@ -67,53 +68,51 @@ export const PacepardHeader = () => {
               </div>
             </div>
 
+            {/* Mobile + CTA section */}
             <div className="bg-background mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 in-data-[state=active]:block md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none lg:in-data-[state=active]:flex dark:shadow-none dark:lg:bg-transparent">
+              {/* Mobile navigation */}
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
-                  {Navigation.map((item, index) => (
-                    <li key={index}>
+                  {navigationData.links.map((item) => (
+                    <li key={item.id}>
                       <Link
                         href={item.href}
                         className="text-foreground hover:text-accent-foreground block duration-150"
                       >
-                        <span>{item.label}</span>
+                        {item.label}
                       </Link>
                     </li>
                   ))}
                 </ul>
               </div>
 
+              {/* Action buttons */}
               <div className="flex w-full items-start sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <div className="lg:flex relative z-20 cursor-pointer hidden">
                   <ThemeToggle />
                 </div>
 
-                
-                {!scrolled && (
-                  <>
-                    <Button asChild variant="link" size="sm">
-                      <Link href="#">
-                        <span className="text-foreground hover:text-accent-foreground">
-                          Login
-                        </span>
-                      </Link>
-                    </Button>
-
-                    <Button asChild size="sm">
-                      <Link href="#">
-                        <span>Register</span>
-                      </Link>
-                    </Button>
-                  </>
-                )}
-
-                {scrolled && (
-                  <Button asChild size="sm">
-                    <Link href="#">
-                      <span>Host an Hackathon</span>
-                    </Link>
-                  </Button>
-                )}
+                {!scrolled
+                  ? navigationData.actions.loggedOut.map((btn) => (
+                      <Button
+                        asChild
+                        key={btn.id}
+                        variant={btn.variant as any}
+                        size="sm"
+                      >
+                        <Link href={btn.href}>{btn.text}</Link>
+                      </Button>
+                    ))
+                  : navigationData.actions.scrolled.map((btn) => (
+                      <Button
+                        asChild
+                        key={btn.id}
+                        variant={btn.variant as any}
+                        size="sm"
+                      >
+                        <Link href={btn.href}>{btn.text}</Link>
+                      </Button>
+                    ))}
               </div>
             </div>
           </div>
