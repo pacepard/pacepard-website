@@ -19,7 +19,7 @@ export const Navigation = [
   },
    {
     label: "Partner with us",
-    href: "/faq",
+    href: "/contact",
   },
  
 ];
@@ -38,13 +38,13 @@ export const navigationData = {
       {
         id: "login",
         text: "Login",
-        href: "#",
+        href: "https://app.staging.pacepard.com/login",
         variant: "link",
       },
       {
         id: "register",
         text: "Register",
-        href: "#",
+        href: "https://app.staging.pacepard.com/register",
         variant: "default",
       },
     ],
@@ -52,7 +52,7 @@ export const navigationData = {
       {
         id: "host-hackathon",
         text: "Host a Hackathon",
-        href: "#",
+        href: "https://staging.pacepard.com/host-hackathon",
         variant: "default",
       },
     ],
