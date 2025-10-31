@@ -7,7 +7,7 @@ import { useScroll } from "motion/react";
 import ThemeToggle from "@/components/shared/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/pacepard/containers/logo";
-import { navigationData } from "@/_data/pacepard/navigation";
+import { Navigation, navigationData } from "@/_data/pacepard/navigation";
 
 
 export const PacepardHeader = () => {
@@ -54,8 +54,8 @@ export const PacepardHeader = () => {
               {/* Desktop navigation */}
               <div className="hidden lg:block">
                 <ul className="flex gap-4 text-sm">
-                  {navigationData.links.map((item) => (
-                    <li key={item.id}>
+                  {Navigation.map((item) => (
+                    <li key={item.label}>
                       <Link
                         href={item.href}
                         className="font-normal hover:text-primary block duration-150"
@@ -73,8 +73,8 @@ export const PacepardHeader = () => {
               {/* Mobile navigation */}
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
-                  {navigationData.links.map((item) => (
-                    <li key={item.id}>
+                  {Navigation.map((item) => (
+                    <li key={item.label}>
                       <Link
                         href={item.href}
                         className="text-foreground hover:text-accent-foreground block duration-150"

@@ -1,7 +1,7 @@
 export const Navigation = [
   {
     label: "#HackOgbomoso",
-    href: "/about",
+    href: "/hack-ogbomoso",
     dropdown: [
       {
         label: "Our Mission",
@@ -19,11 +19,10 @@ export const Navigation = [
   },
    {
     label: "Partner with us",
-    href: "/contact",
+    href: "/partners",
   },
  
 ];
-
 
 export const navigationData = {
   links: [
