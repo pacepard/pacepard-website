@@ -1,16 +1,7 @@
-<<<<<<<< HEAD:src/components/sections/about-us.tsx
-
-import { AboutUsData } from "@/src/_data/about-us";
-import { Button } from "@/src/components/ui/button";
-import { TextEffect } from "@/src/components/ui/text-effect";
-import { ArrowUpRight } from "lucide-react";
-
-========
 import { AboutUsData } from "@/_data/hack/about-us";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import Link from "next/link";
->>>>>>>> master:src/components/hack/sections/about-us.tsx
 
 export default function AboutUs() {
   return (

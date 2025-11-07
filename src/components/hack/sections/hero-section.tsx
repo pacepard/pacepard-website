@@ -1,22 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-<<<<<<<< HEAD:src/components/sections/hero-section.tsx
-import { ArrowRight, ChevronRight } from 'lucide-react'
-import { Button } from '@/src/components/ui/button'
-import Image from 'next/image'
-
-import { AnimatedGroup } from '@/src/components/ui/animated-group'
-import { TextEffect } from '@/src/components/ui/text-effect'
-import { Variants } from 'motion'
-import { Header } from '@/src/components/shared/header'
-========
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import type { Transition } from "framer-motion";
 import { HackHeroData } from '@/_data/hack/hack-ogbomoso'
->>>>>>>> master:src/components/hack/sections/hero-section.tsx
+
 
 
 const springTransition: Transition = {

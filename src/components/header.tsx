@@ -1,6 +1,10 @@
 'use client'
 import Link from 'next/link'
+<<<<<<< HEAD:src/components/header.tsx
 import { Logo } from '@/src/components/shared/logo'
+=======
+import { Logo } from '@/components/hack/containers/logo'
+>>>>>>> master:components/header.tsx
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/src/components/ui/button'
 import React from 'react'
