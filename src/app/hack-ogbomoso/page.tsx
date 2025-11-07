@@ -10,6 +10,7 @@ import Requirements from "@/components/hack/sections/requirments";
 import Location from "@/components/hack/sections/location";
 import Partners from "@/components/hack/sections/partners";
 
+
 const HackOgbomoso = () => {
   return (
     <main className="min-h-screen w-full overflow-hidden bg-green text-foreground">
