@@ -1,4 +1,4 @@
-import { siteConfig } from "@/_data/site-config";
+import { siteConfig } from "@/src/_data/site-config";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import { LiaLinkedinIn } from "react-icons/lia";

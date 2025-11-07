@@ -1,5 +1,5 @@
-import { footerData } from "@/_data/footer";
-import { Logo } from "@/components/shared/logo";
+import { footerData } from "@/src/_data/footer";
+import { Logo } from "@/src/components/shared/logo";
 import Link from "next/link";
 
 export default function Footer() {

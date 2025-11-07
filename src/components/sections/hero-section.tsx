@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { ArrowRight, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/src/components/ui/button'
 import Image from 'next/image'
 
-import { AnimatedGroup } from '@/components/ui/animated-group'
-import { TextEffect } from '@/components/ui/text-effect'
+import { AnimatedGroup } from '@/src/components/ui/animated-group'
+import { TextEffect } from '@/src/components/ui/text-effect'
 import { Variants } from 'motion'
-import { Header } from '@/components/shared/header'
+import { Header } from '@/src/components/shared/header'
 
 const transitionVariants: Variants = {
     hidden: {

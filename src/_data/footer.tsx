@@ -1,4 +1,4 @@
-import { InstagramIcon, LinkedInIcon, XIcon, YouTubeIcon } from "@/components/shared/social-icons";
+import { InstagramIcon, LinkedInIcon, XIcon, YouTubeIcon } from "@/src/components/shared/social-icons";
 
 export const footerData = {
   brand: {

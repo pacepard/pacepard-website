@@ -1,10 +1,10 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/shared/logo'
+import { Logo } from '@/src/components/shared/logo'
 import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/src/components/ui/button'
 import React from 'react'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 
 const menuItems = [
     { name: 'Features', href: '#link' },

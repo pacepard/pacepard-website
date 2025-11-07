@@ -1,7 +1,7 @@
 
-import { AboutUsData } from "@/_data/about-us";
-import { Button } from "@/components/ui/button";
-import { TextEffect } from "@/components/ui/text-effect";
+import { AboutUsData } from "@/src/_data/about-us";
+import { Button } from "@/src/components/ui/button";
+import { TextEffect } from "@/src/components/ui/text-effect";
 import { ArrowUpRight } from "lucide-react";
 
 

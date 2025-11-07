@@ -2,12 +2,12 @@
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/src/lib/utils";
 import { useScroll } from "motion/react";
-import { Logo } from "@/components/shared/logo";
-import { Navigation } from "@/_data/nav-bar";
-import ThemeToggle from "@/components/shared/theme-toggle";
-import { Button } from "@/components/ui/button";
+import { Logo } from "@/src/components/shared/logo";
+import { Navigation } from "@/src/_data/nav-bar";
+import ThemeToggle from "@/src/components/shared/theme-toggle";
+import { Button } from "@/src/components/ui/button";
 
 
 export const Header = () => {
