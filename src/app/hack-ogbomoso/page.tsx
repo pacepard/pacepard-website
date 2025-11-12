@@ -1,14 +1,13 @@
-import CommunitySection from "@/components/content-6";
+import Header from "@/components/hack/containers/header";
 import AboutUs from "@/components/hack/sections/about-us";
 import CallToAction from "@/components/hack/sections/cta";
 import FAQs from "@/components/hack/sections/faq";
-import Footer from "@/components/pacepard/sections/footer";
 import HeroSection from "@/components/hack/sections/hero-section";
-import MentorSection from "@/components/hack/sections/mentors";
-import Header from "@/components/hack/containers/header";
-import Requirements from "@/components/hack/sections/requirments";
 import Location from "@/components/hack/sections/location";
+import MentorSection from "@/components/hack/sections/mentors";
 import Partners from "@/components/hack/sections/partners";
+import Requirements from "@/components/hack/sections/requirments";
+import Footer from "@/components/pacepard/sections/footer";
 
 
 const HackOgbomoso = () => {
@@ -25,7 +24,7 @@ const HackOgbomoso = () => {
         <CallToAction />
         <FAQs />
         <Location />
-        <CommunitySection />
+        
         <Footer />
         
     </main>

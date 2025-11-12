@@ -1,29 +1,21 @@
-<<<<<<< HEAD:src/app/page.tsx
-import { siteConfig } from "@/src/_data/site-config";
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa6";
-import { LiaLinkedinIn } from "react-icons/lia";
-import { MdEmail } from "react-icons/md";
-=======
-import { PacepardHeader } from "@/components/pacepard/containers/header";
-import AboutSection from "@/components/pacepard/sections/about";
+import AboutSection from "@/components/pacepard/sections/about-section";
 import CallToAction from "@/components/pacepard/sections/call-to-action";
-import Features from "@/components/pacepard/sections/features-4";
-import Footer from "@/components/pacepard/sections/footer";
 import HeroSection from "@/components/pacepard/sections/hero-section";
->>>>>>> master:app/page.tsx
+import { Pricing } from "@/components/pacepard/sections/pricing";
+import { Testimonials } from "@/components/pacepard/sections/testimonials";
 
 
 export default function Home() {
   return (
 
     <>
-      <PacepardHeader />
+      
       <HeroSection/>
       <AboutSection/>
-      <Features/>
+      <Testimonials/>
+      <Pricing/>
       <CallToAction/>
-      <Footer/>
+      
     </>
   );
 }

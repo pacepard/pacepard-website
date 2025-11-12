@@ -1,7 +1,8 @@
+import Link from "next/link"
+
 import VenueDateTime from "@/components/hack/containers/venue"
 import { Button } from "@/components/ui/button"
 import { TextEffect } from "@/components/ui/text-effect"
-import Link from "next/link"
 
 export default function Location() {
   return (

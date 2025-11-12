@@ -1,9 +1,11 @@
 'use client'
 
+import Link from 'next/link'
+
+import { DynamicIcon } from 'lucide-react/dynamic'
+
 import { hackFaqItems, hackFaqSection } from '@/_data/hack/fag-items'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { DynamicIcon } from 'lucide-react/dynamic'
-import Link from 'next/link'
 
 
 export default function FAQ() {

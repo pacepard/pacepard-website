@@ -1,9 +1,10 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
-import { AnimatedGroup } from "@/components/ui/animated-group";
 import type { Transition } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+
 import { ctaData } from "@/_data/pacepard/call-to-action";
+import { AnimatedGroup } from "@/components/ui/animated-group";
+import { Button } from "@/components/ui/button";
 
 const springTransition: Transition = {
   type: "spring",

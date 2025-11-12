@@ -1,7 +1,9 @@
 "use client";
-import { TimelineContent } from "@/components/ui/timeline-animation";
-import { Zap } from "lucide-react";
 import { useRef } from "react";
+
+import { Zap } from "lucide-react";
+
+import { TimelineContent } from "@/components/ui/timeline-animation";
 
 export default function PreText() {
   const heroRef = useRef<HTMLDivElement>(null);

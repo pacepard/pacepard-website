@@ -1,10 +1,15 @@
 "use client";
 
-import { ILogo } from "@/utils/interfaces";
+import { useEffect, useState } from "react";
+
+import Image from "next/image";
+
 import { clsx } from "clsx";
 import { useTheme } from "next-themes";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+
+import { ILogo } from "@/utils/interfaces";
+
+
 
 const LogoContainer = ({
   className,

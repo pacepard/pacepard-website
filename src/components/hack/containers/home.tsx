@@ -1,11 +1,14 @@
 "use client";
+import { useRef, useState } from "react";
+
+import { AlignJustify, X } from "lucide-react";
+import { Drawer } from "vaul";
+
 import { TimelineContent } from "@/components/ui/timeline-animation";
 import VerticalBarsNoise from "@/components/ui/vertical-bars";
 import VerticalCutReveal from "@/components/ui/vertical-cut-reveal";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { AlignJustify, X } from "lucide-react";
-import { useRef, useState } from "react";
-import { Drawer } from "vaul";
+
 
 function WorkflowAutomationHero() {
   const isMobile = useMediaQuery("(max-width: 992px)");

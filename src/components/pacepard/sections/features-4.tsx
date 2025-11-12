@@ -1,6 +1,7 @@
-import { Button } from '@/components/ui/button'
 import { Cpu, Fingerprint, Pencil, Settings2, Sparkles, Zap, LucideIcon, ArrowUpRight } from 'lucide-react'
+
 import { FEATURES_HEADER, FEATURES_GRID } from "@/_data/pacepard/features"; 
+import { Button } from '@/components/ui/button'
 
 // 1. Create a map to link string keys from the data file to the actual Lucide components
 const ICON_MAP: Record<string, LucideIcon> = {

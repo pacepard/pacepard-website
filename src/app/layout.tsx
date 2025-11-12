@@ -1,15 +1,18 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { siteConfig } from "@/src/_data/site-config";
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { AppThemeProvider } from "@/context/theme-provider";
-import { useFont } from "@/_data/fonts";
 
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next"; 
+
+import { useFont } from "@/_data/fonts";
+import { siteConfig } from "@/_data/site-config";
+import { Navbar } from "@/components/pacepard/containers/nav-bar";
+import Footer from "@/components/pacepard/sections/footer";
+import { ThemeProvider } from "@/context/theme-provider";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
-  description:siteConfig.description,
+  description: siteConfig.description,
   metadataBase: new URL(siteConfig.getStartedUrl),
   keywords: [
     "Pacepard",
@@ -64,18 +67,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${useFont.variable} antialiased`}
-      >
 
-        <AppThemeProvider>
-        
-            {children}
+      <body className={`${useFont.variable} antialiased`}  suppressHydrationWarning>
 
-        </AppThemeProvider>
-        
-        <Analytics/>
-        <SpeedInsights/>
+        <ThemeProvider>
+
+          {/* <PacepardHeader /> */}
+          <Navbar/>
+
+          {children}
+
+          <Footer />
+
+        </ThemeProvider>
+
+        <Analytics />
+        <SpeedInsights />
 
       </body>
     </html>

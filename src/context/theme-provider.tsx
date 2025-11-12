@@ -1,62 +1,12 @@
 "use client";
 
-import { createContext, useEffect, useRef } from "react";
-import { usePathname } from "next/navigation";
-import { ThemeProvider, useTheme } from "next-themes";
+import * as React from "react";
 
-function usePrevious<T>(value: T) {
-  const ref = useRef<T>(undefined);
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-  useEffect(() => {
-    ref.current = value;
-  }, [value]);
-
-  return ref.current;
-}
-
-
-
-function ThemeWatcher() {
-  const { resolvedTheme, setTheme } = useTheme();
-
-  useEffect(() => {
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
-
-    function onMediaChange() {
-      const systemTheme = media.matches ? "dark" : "light";
-      if (resolvedTheme === systemTheme) {
-        setTheme("system");
-      }
-    }
-
-    onMediaChange();
-    media.addEventListener("change", onMediaChange);
-
-    return () => {
-      media.removeEventListener("change", onMediaChange);
-    };
-  }, [resolvedTheme, setTheme]);
-
-  return null;
-}
-
-export const AppThemeContext = createContext<{ previousPathname?: string }>({});
-
-export function AppThemeProvider({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  const previousPathname = usePrevious(pathname);
-
-  return (
-    <AppThemeContext.Provider value={{ previousPathname }}>
-      <ThemeProvider
-        attribute="class"
-        enableSystem
-        defaultTheme="system"
-        disableTransitionOnChange
-      >
-        <ThemeWatcher />
-        {children}
-      </ThemeProvider>
-    </AppThemeContext.Provider>
-  );
+export function ThemeProvider({
+  children,
+  ...props
+}: React.ComponentProps<typeof NextThemesProvider>) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }

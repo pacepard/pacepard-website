@@ -1,15 +1,18 @@
 "use client";
 
 
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
 import React from "react";
-import { cn } from "@/lib/utils";
+
+import Link from "next/link";
+
+import { Menu, X } from "lucide-react";
 import { useScroll } from "motion/react";
+
 import { Navigation } from "@/_data/hack/navigation";
-import ThemeToggle from "@/components/shared/theme-toggle";
-import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/hack/containers/logo";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/context/theme-toggle";
+import { cn } from '@/lib/utils';
 
 
 const Header = () => {

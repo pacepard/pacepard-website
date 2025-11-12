@@ -1,195 +1,118 @@
-import React from "react";
-import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { TextEffect } from "@/components/ui/text-effect";
-import { AnimatedGroup } from "@/components/ui/animated-group";
-import { heroData } from "@/_data/pacepard/hero-section";
 
-import type { Transition } from "framer-motion";
+import {
+  ArrowRight,
+  Blend,
+  ChartNoAxesColumn,
+  CircleDot,
+  Diamond,
+} from "lucide-react";
 
-const springTransition: Transition = {
-  type: "spring",
-  bounce: 0.3,
-  duration: 1.5,
-};
+import { DashedLine } from "@/components/dashed-line";
+import { Button } from "@/components/ui/button";
 
-const transitionVariants = {
-  item: {
-    hidden: {
-      opacity: 0,
-      filter: "blur(12px)",
-      y: 12,
-    },
-    visible: {
-      opacity: 1,
-      filter: "blur(0px)",
-      y: 0,
-      transition: springTransition,
-    },
+const features = [
+  {
+    title: "Tailored workflows",
+    description: "Track progress across custom issue flows for your team.",
+    icon: CircleDot,
   },
-};
+  {
+    title: "Cross-team projects",
+    description: "Collaborate across teams and departments.",
+    icon: Blend,
+  },
+  {
+    title: "Milestones",
+    description: "Break projects down into concrete phases.",
+    icon: Diamond,
+  },
+  {
+    title: "Progress insights",
+    description: "Track scope, velocity, and progress over time.",
+    icon: ChartNoAxesColumn,
+  },
+];
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
-    <>
-      <main className="overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 isolate hidden contain-strict lg:block"
-        >
-          <div className="absolute top-0 left-0 h-320 w-140 -translate-y-87.5 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsla(0,0%,85%,.08)_0,hsla(0,0%,55%,.02)_50%,hsla(0,0%,45%,0)_80%)]" />
-          <div className="absolute top-0 left-0 h-320 w-60 [translate:5%_-50%] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
-          <div className="absolute top-0 left-0 h-320 w-60 -translate-y-87.5 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
-        </div>
-        <section className="mb-5 md:mb-20">
-          <div className="relative pt-24">
-            <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
+    <section className="py-28 lg:py-32 lg:pt-44">
+      <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
+        {/* Left side - Main content */}
+        <div className="flex-1">
+          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
+            Mainline Next.js template
+          </h1>
 
-            <div className="mx-auto max-w-5xl px-3 lg:px-6 ">
-              <div className="sm:mx-auto lg:mt-8 lg:mr-auto text-left items-center mt-8">
-                <AnimatedGroup variants={transitionVariants}>
-                  <Link
-                    href="#link"
-                    className=" hover:bg-background dark:hover:border-t-border bg-muted group flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-                  >
-                    <span className="text-foreground text-sm">
-                      {heroData.badge}
-                    </span>
-                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+          <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
+            Mainline is an open-source website template built with shadcn/ui,
+            Tailwind 4 & Next.js
+          </p>
 
-                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                        <span className="flex size-6">
-                          <ArrowRight className="m-auto size-3" />
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </AnimatedGroup>
-
-                <TextEffect
-                  preset="fade-in-blur"
-                  speedSegment={0.3}
-                  as="h1"
-                  className="mt-4 max-w-[700px] text-4xl font-medium text-left md:text-[60px]"
-                >
-                  {heroData.heading}
-                </TextEffect>
-                <TextEffect
-                  per="line"
-                  preset="fade-in-blur"
-                  speedSegment={0.3}
-                  delay={0.5}
-                  as="p"
-                  className="mt-8 max-w-2xl text-lg text-balance"
-                >
-                  {heroData.subheading}
-                </TextEffect>
-
-                <AnimatedGroup
-                  variants={{
-                    container: {
-                      visible: {
-                        transition: {
-                          staggerChildren: 0.05,
-                          delayChildren: 0.75,
-                        },
-                      },
-                    },
-                    ...transitionVariants,
-                  }}
-                  className="mt-8 flex items-center gap-2"
-                >
-                  <div
-                    key={heroData.button1.id}
-                    className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]"
-                  >
-                    <Button
-                      asChild
-                      size="lg"
-                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300"
-                    >
-                      <a href={heroData.button1.href}>
-                        <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
-                          {heroData.button1.text}
-
-                          <ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
-                        </span>
-
-                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
-                      </a>
-                    </Button>
-                  </div>
-
-                  <div className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]">
-                    <Button
-                      key={heroData.button2.id}
-                      asChild
-                      size="lg"
-                      variant="outline"
-                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300"
-                    >
-                      <a href={heroData.button2.href}>
-                        <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
-                          {heroData.button2.text}
-
-                          <ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
-                        </span>
-
-                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
-                      </a>
-                    </Button>
-                  </div>
-                </AnimatedGroup>
-                
-              </div>
-            </div>
-
-            
-            <AnimatedGroup
-              variants={{
-                container: {
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.05,
-                      delayChildren: 0.75,
-                    },
-                  },
-                },
-                ...transitionVariants,
-              }}
+          <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
+            <Button asChild>
+              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
+                Get template
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
+              asChild
             >
-              <div className="relative mt-12 -mr-56 overflow-hidden px-2 sm:mt-12 sm:mr-0 md:mt-20">
-                <div
-                  aria-hidden
-                  className="to-background absolute inset-0 z-10 bg-linear-to-b from-transparent from-80% dark:from-35%"
-                />
-                <div className="ring-background bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-4 shadow-lg ring-1 inset-shadow-2xs shadow-zinc-950/15 dark:inset-shadow-white/20">
-                  <Image
-                    className="bg-background relative hidden aspect-15/8 rounded-2xl dark:block"
-                    src={heroData.mockup.dark.src}
-                    alt={heroData.mockup.dark.alt}
-                    width={heroData.mockup.dark.width}
-                    height={heroData.mockup.dark.height}
-                  />
-                  <Image
-                    className="border-border/25 relative z-2 aspect-15/8 rounded-2xl dark:hidden"
-                    src={heroData.mockup.light.src}
-                    alt={heroData.mockup.light.alt}
-                    width={heroData.mockup.light.width}
-                    height={heroData.mockup.light.height}
-                  />
+              <a
+                href="https://shadcnblocks.com"
+                className="max-w-56 truncate text-start md:max-w-none"
+              >
+                Built by shadcnblocks.com
+                <ArrowRight className="stroke-3" />
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Right side - Features */}
+        <div className="relative flex flex-1 flex-col justify-center space-y-5 max-lg:pt-10 lg:pl-10">
+          <DashedLine
+            orientation="vertical"
+            className="absolute top-0 left-0 max-lg:hidden"
+          />
+          <DashedLine
+            orientation="horizontal"
+            className="absolute top-0 lg:hidden"
+          />
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <div key={feature.title} className="flex gap-2.5 lg:gap-5">
+                <Icon className="text-foreground mt-1 size-4 shrink-0 lg:size-5" />
+                <div>
+                  <h2 className="font-text text-foreground font-semibold">
+                    {feature.title}
+                  </h2>
+                  <p className="text-muted-foreground max-w-76 text-sm">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
-            </AnimatedGroup>
-          </div>
-        </section>
-      </main>
-    </>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
+        <div className="relative h-[793px] w-full">
+          <Image
+            src="/hero.webp"
+            alt="hero"
+            fill
+            className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"
+          />
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+
+export default HeroSection

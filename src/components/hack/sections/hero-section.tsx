@@ -1,11 +1,16 @@
 import React from 'react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+
 import Image from 'next/image'
-import { TextEffect } from '@/components/ui/text-effect'
-import { AnimatedGroup } from '@/components/ui/animated-group'
+import Link from 'next/link'
+
 import type { Transition } from "framer-motion";
+
 import { HackHeroData } from '@/_data/hack/hack-ogbomoso'
+import { AnimatedGroup } from '@/components/ui/animated-group'
+import { Button } from '@/components/ui/button'
+import { TextEffect } from '@/components/ui/text-effect'
+
+
 
 
 

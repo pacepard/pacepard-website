@@ -1,7 +1,8 @@
 'use client';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
+
 import { motion, Variants } from 'framer-motion';
-import React from 'react';
+
 
 export type PresetType =
   | 'fade'

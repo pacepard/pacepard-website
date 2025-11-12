@@ -1,15 +1,18 @@
 "use client";
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
 import React from "react";
-import { cn } from "@/lib/utils";
-import { useScroll } from "motion/react";
-import { Navigation } from "@/_data/pacepard/navigation";
-import ThemeToggle from "@/components/shared/theme-toggle";
-import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/pacepard/containers/logo";
 
-export const PacepardHeader = () => {
+import Link from "next/link";
+
+import { Menu, X } from "lucide-react";
+import { useScroll } from "motion/react";
+
+import { Navigation } from "@/_data/pacepard/navigation";
+import { Logo } from "@/components/pacepard/containers/logo";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/context/theme-toggle";
+import { cn } from '@/lib/utils';
+
+const PacepardHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
 
@@ -110,7 +113,7 @@ export const PacepardHeader = () => {
                 {scrolled && (
                   <Button asChild size="sm">
                     <Link href="#">
-                      <span>Host an Hackathon</span>
+                      <span>Contact Sales</span>
                     </Link>
                   </Button>
                 )}
@@ -122,3 +125,6 @@ export const PacepardHeader = () => {
     </header>
   );
 };
+
+
+export default PacepardHeader
