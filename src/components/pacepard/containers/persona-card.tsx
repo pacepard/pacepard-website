@@ -1,0 +1,63 @@
+'use client'
+
+import { FC } from 'react'
+import { type LucideIcon } from 'lucide-react'
+import Image from 'next/image'
+import { motion } from 'framer-motion' // Import motion
+
+interface IPersonaCard {
+    title?: string
+    image?: string
+    description?: string
+    bgColor?: string // Added for completeness, although not used in the return JSX
+    features?: { icon: LucideIcon, label: string }[] // Added for completeness
+}
+
+const PersonaCard: FC<IPersonaCard> = (data) => {
+
+    const {
+        title,
+        description,
+        image,
+    } = data
+
+    return (
+        <motion.div // Use motion.div for animation/interaction
+            className="flex flex-col group"
+            whileHover={{ y: -5 }} // Lift the card slightly on hover
+            transition={{ type: 'spring', stiffness: 300 }}
+        >
+            <div className="flex items-start justify-between mb-8">
+                <div className="flex-1 pr-6">
+                    <h2 className="text-lg font-bold text-gray-900 mb-2 transition-colors duration-300 group-hover:primary">
+                        {title}
+                    </h2>
+                    <p className="text-sm text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-gray-900">
+                        {description}
+                    </p>
+                </div>
+
+
+                <div
+                >
+                    {/* Use standard <img> tag for the image */}
+                    {image && (
+                        <Image
+                            src={image}
+                            alt={`${title} illustration`}
+                            width={20}
+                            height={20}
+                            className="w-full h-full object-cover transition-opacity duration-500 opacity-90 group-hover:opacity-100"
+                        />
+                    )}
+                </div>
+            </div>
+
+            <div>
+                {/* Assuming features would be rendered here in a complete component */}
+            </div>
+        </motion.div>
+    )
+}
+
+export default PersonaCard

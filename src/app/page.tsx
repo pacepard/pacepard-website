@@ -1,7 +1,10 @@
 import AboutSection from "@/components/pacepard/sections/about-section";
 import CallToAction from "@/components/pacepard/sections/call-to-action";
+import { Features } from "@/components/pacepard/sections/features";
 import HeroSection from "@/components/pacepard/sections/hero-section";
+import { PersonasShowcase } from "@/components/pacepard/sections/persona-showcase";
 import { Pricing } from "@/components/pacepard/sections/pricing";
+import { ResourceAllocation } from "@/components/pacepard/sections/resource-allocation";
 import { Testimonials } from "@/components/pacepard/sections/testimonials";
 
 
@@ -11,7 +14,10 @@ export default function Home() {
     <>
       
       <HeroSection/>
-      <AboutSection/>
+      <PersonasShowcase />
+      <Features/>
+      <ResourceAllocation/>
+
       <Testimonials/>
       <Pricing/>
       <CallToAction/>

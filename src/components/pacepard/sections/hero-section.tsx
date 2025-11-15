@@ -36,7 +36,7 @@ const features = [
 
 const HeroSection = () => {
   return (
-    <section className="py-28 lg:py-32 lg:pt-44">
+    <section className="py-28 pt-12 lg:py-24 lg:pt-32">
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
+      {/* <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
         <div className="relative h-[793px] w-full">
           <Image
             src="/hero.webp"
@@ -109,7 +109,7 @@ const HeroSection = () => {
             className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
