@@ -9,7 +9,7 @@ const personas = [
     id: 'learners',
     title: 'Learners',
     image: '/blocks/learners.svg',
-    description: 'Dive into Kaggle courses, competitions & forums.',
+    description: 'Dive into pacepard courses, competitions & forums.',
     bgColor: 'from-blue-400 to-blue-200',
     features: [
       { icon: Smile, label: 'Beginner competitions' },
@@ -20,7 +20,7 @@ const personas = [
   {
     id: 'developers',
     title: 'Developers',
-    description: "Leverage Kaggle's models, notebooks & datasets.",
+    description: "Leverage pacepard's models, notebooks & datasets.",
     image: '/blocks/learners.svg',
     bgColor: 'from-yellow-400 to-yellow-200',
     features: [
