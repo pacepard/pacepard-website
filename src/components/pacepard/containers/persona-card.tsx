@@ -1,9 +1,11 @@
 'use client'
 
 import { FC } from 'react'
-import { type LucideIcon } from 'lucide-react'
+
 import Image from 'next/image'
+
 import { motion } from 'framer-motion' // Import motion
+import { type LucideIcon } from 'lucide-react'
 
 interface IPersonaCard {
     title?: string

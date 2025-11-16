@@ -1,8 +1,9 @@
 'use client'
 
+import { motion, Variants } from 'framer-motion'
 import { Smile, Wrench, Trophy } from 'lucide-react'
+
 import PersonaCard from '../containers/persona-card'
-import { motion } from 'framer-motion'
 
 const personas = [
   {
@@ -86,7 +87,7 @@ const titleVariants = {
 }
 
 // Animation variants for the card containers (staggered fade-in-up)
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
@@ -123,7 +124,7 @@ export function PersonasShowcase() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               custom={idx} // Pass index as a custom prop for staggered delay
-              variants={cardVariants as any}
+              variants={cardVariants}
             >
               <PersonaCard {...persona} />
             </motion.div>

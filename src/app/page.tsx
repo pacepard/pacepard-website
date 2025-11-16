@@ -1,4 +1,4 @@
-import AboutSection from "@/components/pacepard/sections/about-section";
+import { Background } from "@/components/background";
 import CallToAction from "@/components/pacepard/sections/call-to-action";
 import { Features } from "@/components/pacepard/sections/features";
 import HeroSection from "@/components/pacepard/sections/hero-section";
@@ -15,15 +15,18 @@ export default function Home() {
     <>
       
       <HeroSection />
+
+      <Background className="via-muted to-muted/80">
       <PersonasShowcase />
       <LensShowcase />
       <Features/>
       <ResourceAllocation />
-
       <Testimonials />
+      </Background>
+      
       <Pricing />
       <CallToAction />
-      
+            
     </>
   );
 }
