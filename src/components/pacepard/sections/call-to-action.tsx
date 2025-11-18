@@ -30,7 +30,7 @@ export default function CallToAction() {
       <div className="mx-auto max-w-5xl px-4 lg:flex lg:items-center lg:justify-between">
         {/* Text Section */}
         <div className="mb-8 lg:mb-0 lg:flex-1">
-          <h2 className="text-4xl font-semibold text-accent lg:text-3xl">
+          <h2 className="text-4xl font-semibold lg:text-3xl">
             {ctaData.title}
           </h2>
         </div>

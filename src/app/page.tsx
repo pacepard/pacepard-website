@@ -9,6 +9,7 @@ import { ResourceAllocation } from "@/components/pacepard/sections/resource-allo
 import { Testimonials } from "@/components/pacepard/sections/testimonials";
 
 
+
 export default function Home() {
   return (
 
@@ -16,7 +17,7 @@ export default function Home() {
       
       <HeroSection />
 
-      <Background className="via-muted to-muted/80">
+      <Background>
       <PersonasShowcase />
       <LensShowcase />
       <Features/>
@@ -26,21 +27,12 @@ export default function Home() {
       
       <Pricing />
       <CallToAction />
-            
-    </>
-  );
-}
 
-  {/* <div className="font-sans grid grid-rows-[5px_1fr_20px] md:grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+
+{/* 
+      <div className="font-sans grid grid-rows-[5px_1fr_20px] md:grid-rows-[40px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/blocks/pacepard.svg"
-          alt="Pacepard logo"
-          width={180}
-          height={38}
-          priority
-        />
+      
         <ol className="font-mono list-inside list-decimal text-sm/6 sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             We are here to help you learn and grow by{" "}
@@ -77,16 +69,16 @@ export default function Home() {
         <div className="flex gap-4 flex-col sm:flex-row">
           <a
             className="rounded-sm border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href={siteConfig.products.url}
+            href="{siteConfig.products.url}"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaArrowRight size={16} />
+            
             Start Contributing
           </a>
           <a
             className="rounded-sm border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href={siteConfig.products.docs}
+            href=""
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -124,3 +116,9 @@ export default function Home() {
         </a>
       </footer>
     </div> */}
+            
+    </>
+  );
+}
+
+  

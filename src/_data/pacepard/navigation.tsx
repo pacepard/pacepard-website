@@ -49,7 +49,7 @@ export const NavigationItems = [
       },
     ],
   },
-  { label: "About Us", href: "/about" },
+  // { label: "About Us", href: "/about" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
 ];
@@ -65,3 +65,12 @@ export const NavigationItems = [
 // Pacepard Forge
 // Pacepard Mavens
 // unlocking the superhuman potentails for ll builders
+
+//Become a (Pacepard) Superhuman
+// We are here to help you learn and grow by doing without any limits.
+// AI moves fast, We don't want you to be behind.We give you the tools, you do the building!
+// Collaborate with software engineers, product managers,product designers, data folks, and other lifelong learners.
+// Build Open Source Softwares and AI/ML Products
+// Get started by contributing to lens.
+// => Start Contributing
+//=> Read our docs

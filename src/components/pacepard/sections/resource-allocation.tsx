@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Simple, customisable setup:",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Create challenges, register participants, and set timelines in minutes,  no complicated tools needed.",
     images: [
       {
         src: "/resource-allocation/templates.webp",
@@ -22,8 +22,8 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Reusable event templates:",
+    description: "Draft challenges and hackathons with our smart instructions and templates. No need to start from scratch each time.",
     images: [
       { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
       { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
@@ -62,9 +62,9 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Know what’s happening at every stage:",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "Track everything from start to finish: who’s participating, what they’re building, and how projects are progressing.",
     images: [
       {
         src: "/resource-allocation/graveyard.webp",
@@ -78,9 +78,9 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Knowledgebase for participants:",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Get participants up to speed quickly so they can create better projects and add real value to your product.",
     images: [
       {
         src: "/resource-allocation/discussions.webp",
@@ -94,9 +94,9 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "Friendly Feedback Channels:",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Integrate channels for continuous feedback and insights from participants.",
     images: [
       {
         src: "/resource-allocation/notifications.webp",
@@ -119,7 +119,7 @@ export const ResourceAllocation = () => {
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          Everything you need. <br className="hidden lg:block" /> Nothing you don’t
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">

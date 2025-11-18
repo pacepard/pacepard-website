@@ -7,10 +7,10 @@ import PersonaCard from '../containers/persona-card'
 
 const personas = [
   {
-    id: 'learners',
-    title: 'Learners',
+    id: 'product-teams',
+    title: 'Product Teams',
     image: '/blocks/learners.svg',
-    description: 'Dive into pacepard courses, competitions & forums.',
+    description: 'A software engineer, product manager, product designer etc. working side-by-side on user and product problems.',
     bgColor: 'from-blue-400 to-blue-200',
     features: [
       { icon: Smile, label: 'Beginner competitions' },
@@ -19,9 +19,9 @@ const personas = [
     ],
   },
   {
-    id: 'developers',
-    title: 'Developers',
-    description: "Leverage pacepard's models, notebooks & datasets.",
+    id: 'engineers',
+    title: 'Engineers',
+    description: "AI engineers, software engineers, DevOps specialists, and full-stack developers building mastery and workplace-ready skills  as they contribute to live projects.",
     image: '/blocks/learners.svg',
     bgColor: 'from-yellow-400 to-yellow-200',
     features: [
@@ -31,9 +31,9 @@ const personas = [
     ],
   },
   {
-    id: 'researchers',
-    title: 'Researchers',
-    description: 'Advance ML with our pre-trained model hub & competitions.',
+    id: 'product-design-folks',
+    title: 'Product & Design folks',
+    description: 'Product managers, UX/UI designers, UX Researcher, UX Writers, product marketers etc. shaping experiences and solving real user needs.',
     image: '/blocks/learners.svg',
     bgColor: 'from-blue-300 to-cyan-200',
     features: [
@@ -43,10 +43,10 @@ const personas = [
     ],
   },
   {
-    id: 'learner', // Note: Duplicate ID, changed to avoid React warnings if this were production
-    title: 'New Learners',
+    id: 'learners', // Note: Duplicate ID, changed to avoid React warnings if this were production
+    title: 'Learners',
     image: '/blocks/learners.svg',
-    description: 'Explore new paths with beginner-friendly guides.',
+    description: 'Individuals passionate about technology, eager to grow job-ready skills, build habits, and confidence to thrive in today’s workplace.',
     bgColor: 'from-blue-400 to-blue-200',
     features: [
       { icon: Smile, label: 'Beginner competitions' },
@@ -55,9 +55,9 @@ const personas = [
     ],
   },
   {
-    id: 'developer-pro',
-    title: 'Senior Developers',
-    description: "Contribute to open-source model development.",
+    id: 'data-ai-professionals',
+    title: 'Data & AI Professionals',
+    description: "Data scientists, analysts, machine learning engineers, and AI researchers leveraging Pacepard to build AI/ML products.",
     image: '/blocks/learners.svg',
     bgColor: 'from-yellow-400 to-yellow-200',
     features: [
@@ -67,9 +67,9 @@ const personas = [
     ],
   },
   {
-    id: 'researcher-lead',
-    title: 'Research Leads',
-    description: 'Publish and cite cutting-edge ML research.',
+    id: 'life-long-learners',
+    title: 'Other Life-long learners',
+    description: 'Academic and industry researchers, innovators, and makers exploring solutions, validating ideas, and contributing to projects that create real-world impact.',
     image: '/blocks/learners.svg',
     bgColor: 'from-blue-300 to-cyan-200',
     features: [

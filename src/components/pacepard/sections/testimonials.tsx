@@ -19,36 +19,35 @@ import { cn } from "@/lib/utils";
 const items = [
   {
     quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
+    author: "Ruhamah Ifere",
     role: "PM",
     company: "Mercury Finance",
     image: "/hack-ogbomoso/mentor.png",
   },
   {
     quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
+    author: "Harry Happiness",
     role: "Lead Engineer",
     company: "Mercury Finance",
     image: "/hack-ogbomoso/mentor.png",
   },
   {
     quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
+    author: "Aduragbemi Afe",
     role: "Founder",
     company: "Mercury Finance",
     image: "/hack-ogbomoso/mentor.png",
   },
   {
     quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
+    author: "Adetomiwa Zoe",
     role: "Founder",
     company: "Mercury Finance",
     image: "/hack-ogbomoso/mentor.png",
   },
   {
     quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
+    author: "Favour Brodrick",    role: "PM",
     company: "Mercury Finance",
     image: "/hack-ogbomoso/mentor.png",
   },
@@ -91,9 +90,9 @@ export const Testimonials = ({
               Trusted by product builders
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+            Pacepard is built on the habits that make our superhumans; 
+            learn and grow by doing, and generate high-quality outputs 
+            without the usual headaches.
             </p>
             <Button variant="outline" className="shadow-md">
               Read our Customer Stories <ArrowRight className="size-4" />
@@ -129,7 +128,7 @@ export const Testimonials = ({
                             {testimonial.quote}
                           </blockquote>
                           <div className="space-y-0.5">
-                            <div className="text-primary font-semibold">
+                            <div className="text-black font-semibold">
                               {testimonial.author}, {testimonial.role}
                             </div>
                             <div className="text-muted-foreground text-sm">

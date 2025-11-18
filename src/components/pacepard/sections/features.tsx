@@ -10,15 +10,15 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: "Purpose-built for product development",
+    title: "Organise online, in-person, or hybrid hackathons all in one place",
     image: "/features/triage-card.svg",
   },
   {
-    title: "Manage projects end-to-end",
+    title: "Get thousands to stick around your product and technology",
     image: "/features/cycle-card.svg",
   },
   {
-    title: "Build momentum and healthy habits",
+    title: "Build consistent usage momentum and a healthy feedback loop",
     image: "/features/overview-card.svg",
   },
 ];
@@ -31,19 +31,19 @@ export const Features = () => {
         <div className="relative flex items-center justify-center">
           <DashedLine className="text-muted-foreground" />
           <span className="bg-muted text-muted-foreground absolute px-3 font-mono text-sm font-medium tracking-wide max-md:hidden">
-            MEASURE TWICE. CUT ONCE.
+            PACEPARD HACK. PACEPARD HACK.
           </span>
         </div>
 
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+          Built for world-class hackathons
           </h2>
           <p className="text-muted-foreground leading-snug">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+          Pacepard is built on the habits that make the best hackathons successful: 
+          knowledgeable participants, fast engagement, and launching high-quality initiatives 
+          without the usual headaches.
           </p>
         </div>
 

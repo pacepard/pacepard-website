@@ -16,35 +16,35 @@ const plans = [
     yearlyPrice: "₦0",
     description: "Free for everyone",
     features: [
-      "Unlimited members",
-      "2 teams",
-      "500 issues",
-      "Slack and Github integrations",
+      "Learning challenges and projects",
+      "Beginner-friendly tasks",
+      "Community-based Q&A",
+      "Monthly live sessions"
     ],
   },
   {
-    name: "Startup",
-    monthlyPrice: "₦49,900",
-    yearlyPrice: "₦598,800",
+    name: "Starter",
+    monthlyPrice: "₦19,900",
+    yearlyPrice: "₦191,040",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Unlimited teams",
-      "Unlimited issues and file uploads",
-      "Mainline Insights",
-      "Admin roles",
+      "Everything in Free and...",
+      "Intermediate tasks",
+      "AI-Assisted learning",
+      "Work side-by-side a team",
+      "Starter templates and packs",
+      "Weekly live sessions",
+      "Certifications & Badges",
     ],
   },
   {
-    name: "Enterprise",
-    monthlyPrice: "₦149,000",
-    yearlyPrice: "₦1,798,800",
+    name: "Builder",
+    monthlyPrice: "₦59,900",
+    yearlyPrice: "₦579,040",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
-      "Free daily catered lunch",
-      "random HIPPA audits",
+      "Everything in Starter and...",
+      "1 on 1  mentor pairing & reviews",
+      "Priority support",
+      "Pacepard talent pool",
     ],
   },
 ];
@@ -60,9 +60,8 @@ export const Pricing = ({ className }: { className?: string }) => {
             Pricing
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+          Start using Pacepard for free. 
+          Upgrade to unlock personalised perks,and additional features.
           </p>
         </div>
 
@@ -99,7 +98,7 @@ export const Pricing = ({ className }: { className?: string }) => {
                       onCheckedChange={() => setIsAnnual(!isAnnual)}
                       aria-label="Toggle annual billing"
                     />
-                    <span className="text-sm font-medium">Billed annually</span>
+                    <span className="text-sm font-medium">Billed bi-annually</span>
                   </div>
                 ) : (
                   <span className="text-muted-foreground text-sm">
