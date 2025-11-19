@@ -70,7 +70,7 @@ export const FOOTER_LINKS_DATA = [
 
 export const FOOTER_BOTTOM_TEXT = {
     madeBy: "Made with ❤️ from Ogbomoso, Nigeria",
-    copyrightName: "Pacepard",
+    copyrightName: "Pacepard Labs Ltd",
     copyrightHref: "https://pacepard.com",
     rights: ". All rights reserved."
 };
