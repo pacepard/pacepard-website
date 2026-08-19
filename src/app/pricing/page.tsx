@@ -1,0 +1,23 @@
+import React from 'react';
+
+import { Background } from '@/components/background';
+import Pricing from '@/components/shared/sections/pricing';
+import { PricingTable } from '@/components/shared/sections/pricing-table';
+import Comparator from '@/components/pacepard/pp-pricing';
+import EnterprisePricing from '@/components/pacepard/enterprise-pricing';
+// import { Pricing } from "@/components/blocks/pricing";
+// import { PricingTable } from "@/components/blocks/pricing-table";
+
+const Page = () => {
+    return (
+        <Background>
+            {/* <Pricing /> */}
+            <Comparator />
+            <EnterprisePricing />
+            {/* //className="py-28 text-center lg:pt-44 lg:pb-32"  */}
+            {/* <PricingTable /> */}
+        </Background>
+    );
+};
+
+export default Page;
