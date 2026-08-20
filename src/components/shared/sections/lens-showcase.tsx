@@ -60,7 +60,7 @@ export default function LensShowcase() {
                                 learn and grow by doing
                             </span>{' '}
                             without any limits. AI is making the world move fast
-                            and we don't want you to be behind. We give you the
+                            and we don&apos;t want you to be behind. We give you the
                             right tools, you do the building!
                         </p>
 

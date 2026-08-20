@@ -84,7 +84,7 @@ export const FAQ = ({
                             </h2>
                         )}
                         <p className="max-w-md text-lg leading-snug text-muted-foreground">
-                            If you can't find what you're looking for,{' '}
+                            If you can&apos;t find what you&apos;re looking for,{' '}
                             <br className="md:hidden" />
                             <Link
                                 href="/contact"

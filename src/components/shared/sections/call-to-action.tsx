@@ -11,7 +11,7 @@ export default function CallToAction() {
                 <div className="mx-auto max-w-5xl px-6">
                     <h2 className="text-foreground max-w-lg text-balance text-3xl font-semibold lg:text-4xl">
                         <span className="text-muted-foreground">
-                            The world's best got{' '}
+                            The world&apos;s best got{' '}
                         </span>{' '}
                         better by doing.
                     </h2>
