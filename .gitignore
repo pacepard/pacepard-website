@@ -45,6 +45,7 @@ build/
 /.next/
 .next
 /out/
+/.open-next/
 
 # production
 /build
