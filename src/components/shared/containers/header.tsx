@@ -7,12 +7,12 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { useScroll } from 'motion/react';
 
-import { Navigation } from '@/_data/onaeko/navigation';
+import { Navigation } from '@/_data/pacepard/navigation';
 import { Logo } from '@/components/shared/containers/logo';
 import { Button } from '@pacepard/ui/button';
 import { cn } from '@/lib/utils';
 
-const OnaekoHeader = () => {
+const PacepardHeader = () => {
     const [menuState, setMenuState] = React.useState(false);
     const [scrolled, setScrolled] = React.useState(false);
 
@@ -129,4 +129,4 @@ const OnaekoHeader = () => {
     );
 };
 
-export default OnaekoHeader;
+export default PacepardHeader;

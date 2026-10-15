@@ -30,7 +30,7 @@ const PROGRAM = {
     title: 'Project: AI Education for everyone',
     description: 'Free programme sample for local mock rail.',
     hostName: 'Damola Oladipo',
-    partnerName: 'Onaeko',
+    partnerName: 'Pacepard',
     outcomes: ['Understand AI foundations', 'Apply tools to real work'],
     whoFor: ['Builders exploring AI'],
     whoNotFor: ['People seeking certification only'],

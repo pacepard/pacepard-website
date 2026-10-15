@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 
 import { ChevronRight, X, Linkedin, ArrowRightToLineIcon } from 'lucide-react';
 
-import { NavigationItems } from '@/_data/onaeko/navigation';
+import { NavigationItems } from '@/_data/pacepard/navigation';
 import { Background } from '@/components/background';
 import { Button } from '@pacepard/ui/button';
 import {
@@ -186,7 +186,7 @@ export const Navbar = () => {
                                     size="lg"
                                     className="text-sm md:text-base"
                                 >
-                                    <Link href="mailto:hello@onaeko.com">
+                                    <Link href="mailto:hello@pacepard.com">
                                         <span>Get Started</span>
                                         <ArrowRightToLineIcon />
                                     </Link>
@@ -334,7 +334,7 @@ export const Navbar = () => {
                                 {/* Social Icons container */}
                                 <div className="flex space-x-6">
                                     <Link
-                                        href="https://x.com/onaeko"
+                                        href="https://x.com/pacepard"
                                         aria-label="Follow on X (Twitter)"
                                         className="w-9 h-9 bg-accent hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
                                         onClick={() => setIsMenuOpen(false)}
@@ -342,7 +342,7 @@ export const Navbar = () => {
                                         <X className="w-5 h-5" />
                                     </Link>
                                     <Link
-                                        href="https://www.linkedin.com/company/onaeko"
+                                        href="https://www.linkedin.com/company/pacepard"
                                         aria-label="Follow on LinkedIn"
                                         className="w-9 h-9 bg-accent hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
                                         onClick={() => setIsMenuOpen(false)}

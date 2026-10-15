@@ -39,7 +39,7 @@ export const Features = () => {
                         Built for world-class hackathons
                     </h2>
                     <p className="text-muted-foreground leading-snug">
-                        Onaeko is built on the habits that make the best
+                        Pacepard is built on the habits that make the best
                         hackathons successful: knowledgeable participants, fast
                         engagement, and launching high-quality initiatives
                         without the usual headaches.

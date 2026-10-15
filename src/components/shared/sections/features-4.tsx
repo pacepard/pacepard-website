@@ -9,7 +9,7 @@ import {
     ArrowUpRight,
 } from 'lucide-react';
 
-import { FEATURES_HEADER, FEATURES_GRID } from '@/_data/onaeko/features';
+import { FEATURES_HEADER, FEATURES_GRID } from '@/_data/pacepard/features';
 import { Button } from '@pacepard/ui/button';
 
 // 1. Create a map to link string keys from the data file to the actual Lucide components

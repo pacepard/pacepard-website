@@ -1,7 +1,7 @@
 {
-  "name": "Onaeko - your best way to learn",
-  "short_name": "Onaeko",
-  "description": "Onaeko - your best way to learn",
+  "name": "Pacepard - your best way to learn",
+  "short_name": "Pacepard",
+  "description": "Pacepard - your best way to learn",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,19 +9,19 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/blocks/onaeko-icon.png",
+      "src": "/blocks/pacepard-icon.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/blocks/onaeko-icon.png",
+      "src": "/blocks/pacepard-icon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/blocks/onaeko-icon.png",
+      "src": "/blocks/pacepard-icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

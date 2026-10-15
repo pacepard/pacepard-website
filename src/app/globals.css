@@ -188,7 +188,7 @@
     }
   }
 
-  /* Pacepard route loader (see OnaekoIconLoader) */
+  /* Pacepard route loader (see PacepardIconLoader) */
   --animate-pacepard-loader: pacepard-loader-breathe 1.2s ease-in-out infinite;
 
   @keyframes pacepard-loader-breathe {

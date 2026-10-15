@@ -3,7 +3,7 @@ import {
     SOCIAL_LINKS_DATA,
     FOOTER_LINKS_DATA,
     FOOTER_BOTTOM_TEXT,
-} from '@/_data/onaeko/footer';
+} from '@/_data/pacepard/footer';
 import { DashedLine } from '@/components/dashed-line';
 
 import { Logo } from '@/components/shared/containers/logo';
@@ -37,8 +37,8 @@ export default function Footer() {
                                     className="flex shrink-0 items-center gap-2"
                                 >
                                     <Image
-                                        src="/blocks/onaeko.png"
-                                        alt="Onaeko logo"
+                                        src="/blocks/pacepard.png"
+                                        alt="Pacepard logo"
                                         width={250}
                                         height={40}
                                     />
@@ -116,7 +116,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Onaeko Text */}
+                    {/* Pacepard Text */}
                     <div className="mt-24 flex justify-center ">
                         <span className="text-[4.5rem] md:text-[12rem] lg:text-[15rem] lg:text-[17.6rem] font-bold select-none leading-none bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 inset-x-0">
                             {BRAND_INFO.name}

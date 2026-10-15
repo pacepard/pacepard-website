@@ -20,7 +20,7 @@ const GoCTA = () => {
                                 className="pl-2.5 h-11"
                             >
                                 <Link
-                                    href="https://calendly.com/onaeko"
+                                    href="https://calendly.com/pacepard"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -32,7 +32,7 @@ const GoCTA = () => {
                                 </Link>
                             </Button>
                             <Button asChild className="pr-2 h-11">
-                                <Link href="mailto:hello@onaeko.com">
+                                <Link href="mailto:hello@pacepard.com">
                                     Send us a mail
                                     <ArrowRightToLineIcon
                                         strokeWidth={2.5}

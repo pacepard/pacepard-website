@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     metadataBase: new URL(siteConfig.getStartedUrl),
     keywords: [
-        'Onaeko',
+        'Pacepard',
         'Hackathon',
         'Product Designer',
         'Youtube',
@@ -105,7 +105,7 @@ export default function RootLayout({
                 className={`${useFont.variable} antialiased overflow-x-hidden`}
             >
                 <InitialLoadGate>
-                    {/* <OnaekoHeader /> */}
+                    {/* <PacepardHeader /> */}
                     <Navbar />
 
                     {children}

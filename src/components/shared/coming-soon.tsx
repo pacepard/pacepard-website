@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@pacepard/ui/button';
 
 const DEFAULT_IMAGE = '/blocks/pp.png';
-const CALENDLY = 'https://calendly.com/onaeko';
+const CALENDLY = 'https://calendly.com/pacepard';
 
 interface Countdown {
     days: number;
@@ -108,7 +108,7 @@ export function ComingSoonPanel({
     badgeLabel = 'Coming soon',
     showCountdown = false,
     imageSrc = DEFAULT_IMAGE,
-    imageAlt = 'Onaeko',
+    imageAlt = 'Pacepard',
     imageWidth = 560,
     imageHeight = 420,
     primaryAction = { label: 'Back to home', href: '/' },

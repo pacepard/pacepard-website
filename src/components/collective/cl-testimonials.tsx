@@ -7,46 +7,46 @@ import { cn } from '@/lib/utils';
 
 const testimonials = [
     {
-        quote: 'Onaeko cut out all the messy parts on how to attempt real user problems.',
+        quote: 'Pacepard cut out all the messy parts on how to attempt real user problems.',
         author: 'Ruhamah Ifere',
         role: 'Founder/E.D',
         company: 'Trully Verify Africa',
-        image: '/onaeko/ruhamah.png',
+        image: '/pacepard/ruhamah.png',
     },
     {
         quote: "The best hands-on learning experience I've ever had, the results show up fast.",
         author: 'Adetomiwa Odunlade',
         role: 'Founder',
         company: 'Mercury Finance',
-        image: '/onaeko/zoe.png',
+        image: '/pacepard/zoe.png',
     },
     {
         quote: "It's the closest thing to working inside a top product team.",
         author: 'Peter Odejobi',
         role: 'Mobile Engineer',
         company: 'First Bank',
-        image: '/onaeko/peter.png',
+        image: '/pacepard/peter.png',
     },
     {
         quote: 'With respect to the format. This is the best I have ever participated in.',
         author: 'Aduragbemi Afe',
         role: 'PM',
         company: 'Learnpally',
-        image: '/onaeko/adura.png',
+        image: '/pacepard/adura.png',
     },
     {
         quote: 'Since I started, I saw myself have a real behavior change to coding.',
         author: 'Favour Brodrick',
         role: 'Technical PM',
-        company: 'Onaeko',
-        image: '/onaeko/favour.png',
+        company: 'Pacepard',
+        image: '/pacepard/favour.png',
     },
     {
         quote: "I stopped overthinking and started building. Now I'm confident and I've consistent habits.",
         author: 'Harry',
         role: 'Nodejs Engineer',
         company: 'Troott',
-        image: '/onaeko/harry.png',
+        image: '/pacepard/harry.png',
     },
 ] as const;
 
