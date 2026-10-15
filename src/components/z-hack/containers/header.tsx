@@ -9,7 +9,7 @@ import { useScroll } from 'motion/react';
 
 import { Navigation } from '@/_data/hack/navigation';
 import { Logo } from '@/components/z-hack/containers/logo';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { cn } from '@/lib/utils';
 
 const Header = () => {

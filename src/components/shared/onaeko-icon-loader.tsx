@@ -24,9 +24,9 @@ export function OnaekoIconLoader({
             role="status"
             aria-live="polite"
         >
-            <span className="animate-onaeko-loader inline-flex will-change-transform">
+            <span className="animate-pacepard-loader inline-flex will-change-transform">
                 <Image
-                    src="/blocks/onaeko-icon.png"
+                    src="/blocks/pacepard-icon.svg"
                     alt=""
                     width={size}
                     height={size}

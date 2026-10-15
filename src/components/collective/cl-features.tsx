@@ -20,8 +20,8 @@ import {
     TabsContent,
     TabsList,
     TabsTrigger,
-} from '@onaeko/ui/tabs';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@pacepard/ui/tabs';
+import { Card, CardContent } from '@pacepard/ui/card';
 import Link from 'next/link';
 
 /** Put screenshot at public/blocks/cl-features.png to use the image in the UI. */

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, ArrowRightToLineIcon, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 /** Set to true or put your screenshot at /blocks/cta-creator.png to use the image in the UI. */
 const USE_CTA_IMAGE = false;

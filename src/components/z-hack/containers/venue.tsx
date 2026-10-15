@@ -3,7 +3,7 @@ import { useId } from 'react';
 import { DynamicIcon } from 'lucide-react/dynamic';
 
 import { venueItems } from '@/_data/hack/venue-data';
-import { Label } from '@/components/ui/label';
+import { Label } from '@pacepard/ui/label';
 
 export default function VenueDateTime() {
     const baseId = useId();

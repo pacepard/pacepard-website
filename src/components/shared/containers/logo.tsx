@@ -30,10 +30,10 @@ const Logo = (data: ILogo) => {
                 {...divProps}
             >
                 <Image
-                    src="/blocks/onaeko.png"
-                    alt="Onaeko"
+                    src="/blocks/pacepard-icon.svg"
+                    alt="Pacepard"
                     className="w-26 h-auto"
-                    width={160}
+                    width={40}
                     height={40}
                     priority
                 />

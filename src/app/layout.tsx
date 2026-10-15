@@ -57,27 +57,27 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: '/blocks/onaeko-icon.png',
-                type: 'image/png',
+                url: '/blocks/pacepard-icon.svg',
+                type: 'image/svg+xml',
                 sizes: 'any',
             },
             {
-                url: '/blocks/onaeko-icon.png',
+                url: '/blocks/pacepard-icon.svg',
                 sizes: '32x32',
-                type: 'image/png',
+                type: 'image/svg+xml',
             },
             {
-                url: '/blocks/onaeko-icon.png',
+                url: '/blocks/pacepard-icon.svg',
                 sizes: '16x16',
-                type: 'image/png',
+                type: 'image/svg+xml',
             },
         ],
-        shortcut: '/blocks/onaeko-icon.png',
+        shortcut: '/blocks/pacepard-icon.svg',
         apple: [
             {
-                url: '/blocks/onaeko-icon.png',
+                url: '/blocks/pacepard-icon.svg',
                 sizes: '180x180',
-                type: 'image/png',
+                type: 'image/svg+xml',
             },
         ],
     },
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     },
     other: {
         'msapplication-TileColor': '#F56C23',
-        'msapplication-TileImage': '/blocks/onaeko-icon.png',
+        'msapplication-TileImage': '/blocks/pacepard-icon.svg',
         'msapplication-config': '/browserconfig.xml',
     },
 };

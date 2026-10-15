@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '@pacepard/ui/button';
+import { Card } from '@pacepard/ui/card';
 import { Check, Minus } from 'lucide-react';
 
 const plans = [

@@ -9,7 +9,7 @@ import { useScroll } from 'motion/react';
 
 import { Navigation } from '@/_data/onaeko/navigation';
 import { Logo } from '@/components/shared/containers/logo';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { cn } from '@/lib/utils';
 
 const OnaekoHeader = () => {

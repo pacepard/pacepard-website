@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 import { Check } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import {
     Card,
     CardHeader,
     CardTitle,
     CardDescription,
-} from '@/components/ui/card';
+} from '@pacepard/ui/card';
 
 export default function Pricing() {
     return (

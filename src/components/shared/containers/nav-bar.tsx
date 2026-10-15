@@ -10,15 +10,14 @@ import { ChevronRight, X, Linkedin, ArrowRightToLineIcon } from 'lucide-react';
 
 import { NavigationItems } from '@/_data/onaeko/navigation';
 import { Background } from '@/components/background';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import {
     NavigationMenu,
     NavigationMenuContent,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu';
+} from '@pacepard/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 
 export const Navbar = () => {
@@ -71,9 +70,9 @@ export const Navbar = () => {
                             className="flex shrink-0 items-center gap-2"
                         >
                             <Image
-                                src="/blocks/onaeko.png"
-                                alt="Onaeko"
-                                width={150}
+                                src="/blocks/pacepard-icon.svg"
+                                alt="Pacepard"
+                                width={40}
                                 height={40}
                                 className="h-8 w-auto"
                                 priority
@@ -99,29 +98,19 @@ export const Navbar = () => {
                                                             <li
                                                                 key={item.title}
                                                             >
-                                                                <NavigationMenuLink
-                                                                    asChild
-                                                                >
-                                                                    <Link
-                                                                        href={
-                                                                            item.href
-                                                                        }
-                                                                        className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
-                                                                    >
-                                                                        <div className="space-y-1.5 transition-transform duration-300 group-hover:translate-x-1">
-                                                                            <div className="text-sm leading-none font-medium">
-                                                                                {
-                                                                                    item.title
-                                                                                }
-                                                                            </div>
-                                                                            <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                                                                                {
-                                                                                    item.description
-                                                                                }
-                                                                            </p>
-                                                                        </div>
-                                                                    </Link>
-                                                                </NavigationMenuLink>
+                                                            <Link
+                                                                href={item.href}
+                                                                className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
+                                                            >
+                                                                <div className="space-y-1.5 transition-transform duration-300 group-hover:translate-x-1">
+                                                                    <div className="text-sm leading-none font-medium">
+                                                                        {item.title}
+                                                                    </div>
+                                                                    <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                                                                        {item.description}
+                                                                    </p>
+                                                                </div>
+                                                            </Link>
                                                             </li>
                                                         ),
                                                     )}

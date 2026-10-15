@@ -1,6 +1,6 @@
 'use client';
 
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@pacepard/ui/badge';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { Marquee } from '@/components/ui/marquee';

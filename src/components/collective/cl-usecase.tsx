@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '@pacepard/ui/button';
+import { Card } from '@pacepard/ui/card';
 import {
     ArrowUp,
     CalendarCheck,

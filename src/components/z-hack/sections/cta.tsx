@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 export default function CallToAction() {
     return (

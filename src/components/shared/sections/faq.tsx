@@ -5,7 +5,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from '@/components/ui/accordion';
+} from '@pacepard/ui/accordion';
 import { cn } from '@/lib/utils';
 
 const categories = [

@@ -11,7 +11,7 @@ import {
     Calendar,
 } from 'phosphor-react';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { Mockup } from '@/components/ui/mockup';
 import Screenshot from '@/components/ui/screenshot';
 

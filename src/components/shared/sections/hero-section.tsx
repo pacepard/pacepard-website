@@ -12,7 +12,7 @@ import {
 } from 'phosphor-react';
 
 import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 type Feature = {
     title: string;

@@ -7,7 +7,7 @@ import type { Transition } from 'motion/react';
 
 import { HackHeroData } from '@/_data/hack/hack-ogbomoso';
 import { AnimatedGroup } from '@/components/ui/animated-group';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { TextEffect } from '@/components/ui/text-effect';
 
 const springTransition: Transition = {

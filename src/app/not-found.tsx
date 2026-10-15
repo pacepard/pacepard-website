@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 import { Background } from '@/components/background';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 export default function NotFound() {
     return (

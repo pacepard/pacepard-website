@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { AboutUsData } from '@/_data/hack/about-us';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { TextEffect } from '@/components/ui/text-effect';
 
 export default function AboutUs() {

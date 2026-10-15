@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRightToLineIcon, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 const HERO_IMAGE = '/blocks/hack-with-workflow.png';
 

@@ -7,8 +7,8 @@ import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 
 import { serverAction } from '@/actions/server-action';
-import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Button } from '@pacepard/ui/button';
+import { Checkbox } from '@pacepard/ui/checkbox';
 import {
     Form,
     FormControl,
@@ -16,16 +16,16 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
+} from '@pacepard/ui/form';
+import { Input } from '@pacepard/ui/input';
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select';
-import { Textarea } from '@/components/ui/textarea';
+} from '@pacepard/ui/select';
+import { Textarea } from '@pacepard/ui/textarea';
 import { formSchema } from '@/lib/form-schema';
 
 type Schema = z.infer<typeof formSchema>;

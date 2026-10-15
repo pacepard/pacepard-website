@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, ArrowRightToLineIcon } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { cn } from '@/lib/utils';
 
 export default function PPCTA() {

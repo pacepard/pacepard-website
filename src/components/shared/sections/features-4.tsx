@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 
 import { FEATURES_HEADER, FEATURES_GRID } from '@/_data/onaeko/features';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 // 1. Create a map to link string keys from the data file to the actual Lucide components
 const ICON_MAP: Record<string, LucideIcon> = {

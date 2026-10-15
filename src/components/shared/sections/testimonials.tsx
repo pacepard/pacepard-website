@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@pacepard/ui/button';
+import { Card, CardContent } from '@pacepard/ui/card';
 import {
     Carousel,
     CarouselContent,

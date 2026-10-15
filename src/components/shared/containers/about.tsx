@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 import { cn } from '@/lib/utils';
 
 const About = () => {

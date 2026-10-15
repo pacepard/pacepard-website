@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Background } from '@/components/background';
 import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Button } from '@pacepard/ui/button';
+import { Input } from '@pacepard/ui/input';
 import { cn } from '@/lib/utils';
 
 function SlackIcon({ className }: { className?: string }) {

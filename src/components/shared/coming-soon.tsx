@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRightToLineIcon, Calendar, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { Button } from '@pacepard/ui/button';
 
 const DEFAULT_IMAGE = '/blocks/pp.png';
 const CALENDLY = 'https://calendly.com/onaeko';
