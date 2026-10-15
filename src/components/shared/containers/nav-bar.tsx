@@ -70,9 +70,9 @@ export const Navbar = () => {
                             className="flex shrink-0 items-center gap-2"
                         >
                             <Image
-                                src="/blocks/pacepard-icon.svg"
+                                src="/blocks/pacepard.svg"
                                 alt="Pacepard"
-                                width={40}
+                                width={160}
                                 height={40}
                                 className="h-8 w-auto"
                                 priority
