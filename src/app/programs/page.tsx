@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { accountsLoginHref, listPrograms } from '@/lib/catalogue';
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProgramsPage() {
     const response = await listPrograms();
     const rows = Array.isArray(response.data)
