@@ -1,7 +1,7 @@
 {
-  "name": "@onaeko/website",
+  "name": "@pacepard/website",
   "version": "0.1.0",
-  "author": "onaeko.com",
+  "author": "pacepard.com",
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "engines": {
